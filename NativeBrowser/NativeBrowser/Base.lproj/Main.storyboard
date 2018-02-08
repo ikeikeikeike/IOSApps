@@ -68,7 +68,6 @@
                     <connections>
                         <outlet property="backButton" destination="6We-mn-fiW" id="sbG-yq-kpS"/>
                         <outlet property="fowardButton" destination="dXN-F8-g0b" id="dWs-Mb-snD"/>
-                        <outlet property="goFoward" destination="dXN-F8-g0b" id="QrH-v3-9wL"/>
                         <outlet property="reloadButton" destination="0gf-Pa-vJC" id="DRG-Zy-BU0"/>
                         <outlet property="urlField" destination="A2X-q8-egQ" id="rvO-l1-Eoe"/>
                         <outlet property="webView" destination="O8j-2a-h8a" id="5AR-vj-AxH"/>

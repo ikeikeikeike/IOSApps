@@ -18,7 +18,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = URL(string: "https://dotinstall.com")!
+        let req = URLRequest(url: url)
+        
+        self.webView.loadRequest(req)
     }
 
     override func didReceiveMemoryWarning() {
