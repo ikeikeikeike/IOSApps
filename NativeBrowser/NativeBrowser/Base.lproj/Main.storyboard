@@ -49,6 +49,9 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ0-qV-olC">
+                                <rect key="frame" x="340" y="35" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,6 +59,8 @@
                             <constraint firstItem="A2X-q8-egQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8B0-7e-kft"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A2X-q8-egQ" secondAttribute="trailing" constant="10" id="PIr-oB-Wcp"/>
                             <constraint firstItem="O8j-2a-h8a" firstAttribute="top" secondItem="A2X-q8-egQ" secondAttribute="bottom" constant="10" id="VVT-Ae-rso"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZZ0-qV-olC" secondAttribute="trailing" constant="15" id="WZ9-Df-QLZ"/>
+                            <constraint firstItem="ZZ0-qV-olC" firstAttribute="centerY" secondItem="A2X-q8-egQ" secondAttribute="centerY" id="X9r-vT-dDg"/>
                             <constraint firstItem="9iL-wW-WFq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZqY-6t-Cdx"/>
                             <constraint firstItem="O8j-2a-h8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="adn-Az-HTf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O8j-2a-h8a" secondAttribute="trailing" id="fOg-cT-bdw"/>
@@ -67,10 +72,11 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="6We-mn-fiW" id="sbG-yq-kpS"/>
+                        <outlet property="browserIndicatorView" destination="ZZ0-qV-olC" id="jWL-bY-xcq"/>
+                        <outlet property="browserView" destination="O8j-2a-h8a" id="x4b-8s-nte"/>
                         <outlet property="fowardButton" destination="dXN-F8-g0b" id="dWs-Mb-snD"/>
                         <outlet property="reloadButton" destination="0gf-Pa-vJC" id="DRG-Zy-BU0"/>
                         <outlet property="urlField" destination="A2X-q8-egQ" id="rvO-l1-Eoe"/>
-                        <outlet property="webView" destination="O8j-2a-h8a" id="5AR-vj-AxH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
