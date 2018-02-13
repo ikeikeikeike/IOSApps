@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BE32027E6EF074119AD3C21 /* Pods_WalletInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE8274E60E38F98581C69E4 /* Pods_WalletInjector.framework */; };
-		75C198DC1C2E43DF963573A8 /* Pods_WalletInjectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F78F887E645B7C59DED20E /* Pods_WalletInjectorUITests.framework */; };
+		64ABBFCD9B160A2FFDFF0301 /* Pods_WalletInjectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D93534320640FB2B35A4413 /* Pods_WalletInjectorUITests.framework */; };
+		6A31E1FF830C453DB0DD649F /* Pods_WalletInjectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F19E51EB1F4AF0EF115517 /* Pods_WalletInjectorTests.framework */; };
+		8863B95220335A1000449D3B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95120335A1000449D3B /* Charts.framework */; };
 		88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC27E20302B6F00874726 /* AppDelegate.swift */; };
 		88DAC28420302B6F00874726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28220302B6F00874726 /* Main.storyboard */; };
 		88DAC28620302B6F00874726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28520302B6F00874726 /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		88DAC2B120302D5900874726 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B020302D5900874726 /* RootTabBarController.swift */; };
 		88DAC2B320302D9D00874726 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B220302D9D00874726 /* ChartViewController.swift */; };
 		88DAC2B520302DB600874726 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B420302DB600874726 /* SettingsViewController.swift */; };
-		BCEC03BADA83537307A1AA86 /* Pods_WalletInjectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EE085373483A14B6F1BB37 /* Pods_WalletInjectorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FEFFAE380F63CD483C621AA /* Pods-WalletInjector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.release.xcconfig"; sourceTree = "<group>"; };
-		42B0F123217E3ECB55C63E7B /* Pods-WalletInjectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6BE8274E60E38F98581C69E4 /* Pods_WalletInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74EE085373483A14B6F1BB37 /* Pods_WalletInjectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88A7042A22615BB964E25475 /* Pods-WalletInjector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.debug.xcconfig"; sourceTree = "<group>"; };
+		089E6D1F60DD0E015F8B4963 /* Pods-WalletInjectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BDF5C1DDADBF3CFFB3416F7 /* Pods-WalletInjectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		379782F1AD824B18D8890FCE /* Pods-WalletInjectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D93534320640FB2B35A4413 /* Pods_WalletInjectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783F1298C489F92F474581F1 /* Pods-WalletInjector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.debug.xcconfig"; sourceTree = "<group>"; };
+		80F19E51EB1F4AF0EF115517 /* Pods_WalletInjectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8863B95120335A1000449D3B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		88DAC27B20302B6F00874726 /* WalletInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DAC27E20302B6F00874726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DAC28320302B6F00874726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,10 +61,9 @@
 		88DAC2B020302D5900874726 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		88DAC2B220302D9D00874726 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		88DAC2B420302DB600874726 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		96F78F887E645B7C59DED20E /* Pods_WalletInjectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C56027D523927218B80411FA /* Pods-WalletInjectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CEC21B147A9C5A4D9C3323FA /* Pods-WalletInjectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests.release.xcconfig"; sourceTree = "<group>"; };
-		F6BB07D6E8EA175279566C88 /* Pods-WalletInjectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A13D6A812FD83102D07C1CC0 /* Pods-WalletInjector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.release.xcconfig"; sourceTree = "<group>"; };
+		DAF273E8D09DF3674260A8ED /* Pods-WalletInjectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED588E86AEE67BE2DA04AEBE /* Pods_WalletInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BE32027E6EF074119AD3C21 /* Pods_WalletInjector.framework in Frameworks */,
+				8863B95220335A1000449D3B /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEC03BADA83537307A1AA86 /* Pods_WalletInjectorTests.framework in Frameworks */,
+				6A31E1FF830C453DB0DD649F /* Pods_WalletInjectorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,22 +87,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C198DC1C2E43DF963573A8 /* Pods_WalletInjectorUITests.framework in Frameworks */,
+				64ABBFCD9B160A2FFDFF0301 /* Pods_WalletInjectorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		82EFA526D7DE7535833ACA46 /* Pods */ = {
+		6A49EAE0534BF8E4984E5C79 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				88A7042A22615BB964E25475 /* Pods-WalletInjector.debug.xcconfig */,
-				1FEFFAE380F63CD483C621AA /* Pods-WalletInjector.release.xcconfig */,
-				F6BB07D6E8EA175279566C88 /* Pods-WalletInjectorTests.debug.xcconfig */,
-				CEC21B147A9C5A4D9C3323FA /* Pods-WalletInjectorTests.release.xcconfig */,
-				42B0F123217E3ECB55C63E7B /* Pods-WalletInjectorUITests.debug.xcconfig */,
-				C56027D523927218B80411FA /* Pods-WalletInjectorUITests.release.xcconfig */,
+				783F1298C489F92F474581F1 /* Pods-WalletInjector.debug.xcconfig */,
+				A13D6A812FD83102D07C1CC0 /* Pods-WalletInjector.release.xcconfig */,
+				089E6D1F60DD0E015F8B4963 /* Pods-WalletInjectorTests.debug.xcconfig */,
+				379782F1AD824B18D8890FCE /* Pods-WalletInjectorTests.release.xcconfig */,
+				DAF273E8D09DF3674260A8ED /* Pods-WalletInjectorUITests.debug.xcconfig */,
+				0BDF5C1DDADBF3CFFB3416F7 /* Pods-WalletInjectorUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -113,8 +114,8 @@
 				88DAC29220302B6F00874726 /* WalletInjectorTests */,
 				88DAC29D20302B6F00874726 /* WalletInjectorUITests */,
 				88DAC27C20302B6F00874726 /* Products */,
-				82EFA526D7DE7535833ACA46 /* Pods */,
 				FEFC684FF0D19EC97317EEE3 /* Frameworks */,
+				6A49EAE0534BF8E4984E5C79 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,9 +165,10 @@
 		FEFC684FF0D19EC97317EEE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6BE8274E60E38F98581C69E4 /* Pods_WalletInjector.framework */,
-				74EE085373483A14B6F1BB37 /* Pods_WalletInjectorTests.framework */,
-				96F78F887E645B7C59DED20E /* Pods_WalletInjectorUITests.framework */,
+				8863B95120335A1000449D3B /* Charts.framework */,
+				ED588E86AEE67BE2DA04AEBE /* Pods_WalletInjector.framework */,
+				80F19E51EB1F4AF0EF115517 /* Pods_WalletInjectorTests.framework */,
+				3D93534320640FB2B35A4413 /* Pods_WalletInjectorUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,12 +180,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88DAC2A320302B6F00874726 /* Build configuration list for PBXNativeTarget "WalletInjector" */;
 			buildPhases = (
-				716F7A807A0E87F9A8FDA544 /* [CP] Check Pods Manifest.lock */,
+				C3EC3B3DF0BFE9635BCCA4FB /* [CP] Check Pods Manifest.lock */,
 				88DAC27720302B6F00874726 /* Sources */,
 				88DAC27820302B6F00874726 /* Frameworks */,
 				88DAC27920302B6F00874726 /* Resources */,
-				00D006FB33D7B1E3BD9BC6CF /* [CP] Embed Pods Frameworks */,
-				AEA94903A2C9FEEA1B7189BF /* [CP] Copy Pods Resources */,
+				8863B95320335A5300449D3B /* ShellScript */,
+				8873491B11499ACDBA78E010 /* [CP] Embed Pods Frameworks */,
+				6C011E8A1EA2445E7876AE4E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,12 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88DAC2A620302B6F00874726 /* Build configuration list for PBXNativeTarget "WalletInjectorTests" */;
 			buildPhases = (
-				9BEDFB7A13CC89C8A21AFFBE /* [CP] Check Pods Manifest.lock */,
+				13C1ACE3797947ABDBBFBD24 /* [CP] Check Pods Manifest.lock */,
 				88DAC28B20302B6F00874726 /* Sources */,
 				88DAC28C20302B6F00874726 /* Frameworks */,
 				88DAC28D20302B6F00874726 /* Resources */,
-				E2A880A78C17B3ABA0C17FC3 /* [CP] Embed Pods Frameworks */,
-				38BABD6350F868B38B97B7DB /* [CP] Copy Pods Resources */,
+				2D1E7EB66C50452646C57DD4 /* [CP] Embed Pods Frameworks */,
+				C89600C9087D72EF97EA70C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,12 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88DAC2A920302B6F00874726 /* Build configuration list for PBXNativeTarget "WalletInjectorUITests" */;
 			buildPhases = (
-				052F9228CFB41BD1A4C6C699 /* [CP] Check Pods Manifest.lock */,
+				7F2E3194EB5E0DD494B6C70D /* [CP] Check Pods Manifest.lock */,
 				88DAC29620302B6F00874726 /* Sources */,
 				88DAC29720302B6F00874726 /* Frameworks */,
 				88DAC29820302B6F00874726 /* Resources */,
-				75FBD2579ADBB2C7C0E2DE49 /* [CP] Embed Pods Frameworks */,
-				1020FFA54795D8BB83AFC9FC /* [CP] Copy Pods Resources */,
+				245BAF94E6403C7779EC77E8 /* [CP] Embed Pods Frameworks */,
+				D99B17D2BFC974ABF1581A07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,103 +313,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00D006FB33D7B1E3BD9BC6CF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		052F9228CFB41BD1A4C6C699 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WalletInjectorUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1020FFA54795D8BB83AFC9FC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		38BABD6350F868B38B97B7DB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		716F7A807A0E87F9A8FDA544 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WalletInjector-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75FBD2579ADBB2C7C0E2DE49 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9BEDFB7A13CC89C8A21AFFBE /* [CP] Check Pods Manifest.lock */ = {
+		13C1ACE3797947ABDBBFBD24 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -424,7 +331,37 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AEA94903A2C9FEEA1B7189BF /* [CP] Copy Pods Resources */ = {
+		245BAF94E6403C7779EC77E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D1E7EB66C50452646C57DD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C011E8A1EA2445E7876AE4E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,7 +376,39 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E2A880A78C17B3ABA0C17FC3 /* [CP] Embed Pods Frameworks */ = {
+		7F2E3194EB5E0DD494B6C70D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletInjectorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8863B95320335A5300449D3B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		8873491B11499ACDBA78E010 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -451,7 +420,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3EC3B3DF0BFE9635BCCA4FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletInjector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C89600C9087D72EF97EA70C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99B17D2BFC974ABF1581A07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -628,10 +645,14 @@
 		};
 		88DAC2A420302B6F00874726 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88A7042A22615BB964E25475 /* Pods-WalletInjector.debug.xcconfig */;
+			baseConfigurationReference = 783F1298C489F92F474581F1 /* Pods-WalletInjector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WalletInjector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = it.ikeikeikeike.WalletInjector;
@@ -643,10 +664,14 @@
 		};
 		88DAC2A520302B6F00874726 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FEFFAE380F63CD483C621AA /* Pods-WalletInjector.release.xcconfig */;
+			baseConfigurationReference = A13D6A812FD83102D07C1CC0 /* Pods-WalletInjector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WalletInjector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = it.ikeikeikeike.WalletInjector;
@@ -658,7 +683,7 @@
 		};
 		88DAC2A720302B6F00874726 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6BB07D6E8EA175279566C88 /* Pods-WalletInjectorTests.debug.xcconfig */;
+			baseConfigurationReference = 089E6D1F60DD0E015F8B4963 /* Pods-WalletInjectorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -675,7 +700,7 @@
 		};
 		88DAC2A820302B6F00874726 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEC21B147A9C5A4D9C3323FA /* Pods-WalletInjectorTests.release.xcconfig */;
+			baseConfigurationReference = 379782F1AD824B18D8890FCE /* Pods-WalletInjectorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -692,7 +717,7 @@
 		};
 		88DAC2AA20302B6F00874726 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42B0F123217E3ECB55C63E7B /* Pods-WalletInjectorUITests.debug.xcconfig */;
+			baseConfigurationReference = DAF273E8D09DF3674260A8ED /* Pods-WalletInjectorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -708,7 +733,7 @@
 		};
 		88DAC2AB20302B6F00874726 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C56027D523927218B80411FA /* Pods-WalletInjectorUITests.release.xcconfig */;
+			baseConfigurationReference = 0BDF5C1DDADBF3CFFB3416F7 /* Pods-WalletInjectorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
