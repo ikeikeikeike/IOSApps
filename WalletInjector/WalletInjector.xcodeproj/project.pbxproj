@@ -10,6 +10,9 @@
 		64ABBFCD9B160A2FFDFF0301 /* Pods_WalletInjectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D93534320640FB2B35A4413 /* Pods_WalletInjectorUITests.framework */; };
 		6A31E1FF830C453DB0DD649F /* Pods_WalletInjectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F19E51EB1F4AF0EF115517 /* Pods_WalletInjectorTests.framework */; };
 		8863B95220335A1000449D3B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95120335A1000449D3B /* Charts.framework */; };
+		8863B95720335F6E00449D3B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95420335F6E00449D3B /* RealmSwift.framework */; };
+		8863B95820335F6E00449D3B /* ChartsRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95520335F6E00449D3B /* ChartsRealm.framework */; };
+		8863B95920335F6E00449D3B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95620335F6E00449D3B /* Realm.framework */; };
 		88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC27E20302B6F00874726 /* AppDelegate.swift */; };
 		88DAC28420302B6F00874726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28220302B6F00874726 /* Main.storyboard */; };
 		88DAC28620302B6F00874726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28520302B6F00874726 /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		783F1298C489F92F474581F1 /* Pods-WalletInjector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.debug.xcconfig"; sourceTree = "<group>"; };
 		80F19E51EB1F4AF0EF115517 /* Pods_WalletInjectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8863B95120335A1000449D3B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		8863B95420335F6E00449D3B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		8863B95520335F6E00449D3B /* ChartsRealm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartsRealm.framework; path = Carthage/Build/iOS/ChartsRealm.framework; sourceTree = "<group>"; };
+		8863B95620335F6E00449D3B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		88DAC27B20302B6F00874726 /* WalletInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DAC27E20302B6F00874726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DAC28320302B6F00874726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8863B95920335F6E00449D3B /* Realm.framework in Frameworks */,
+				8863B95720335F6E00449D3B /* RealmSwift.framework in Frameworks */,
+				8863B95820335F6E00449D3B /* ChartsRealm.framework in Frameworks */,
 				8863B95220335A1000449D3B /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +174,9 @@
 		FEFC684FF0D19EC97317EEE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8863B95520335F6E00449D3B /* ChartsRealm.framework */,
+				8863B95620335F6E00449D3B /* Realm.framework */,
+				8863B95420335F6E00449D3B /* RealmSwift.framework */,
 				8863B95120335A1000449D3B /* Charts.framework */,
 				ED588E86AEE67BE2DA04AEBE /* Pods_WalletInjector.framework */,
 				80F19E51EB1F4AF0EF115517 /* Pods_WalletInjectorTests.framework */,
@@ -184,7 +196,7 @@
 				88DAC27720302B6F00874726 /* Sources */,
 				88DAC27820302B6F00874726 /* Frameworks */,
 				88DAC27920302B6F00874726 /* Resources */,
-				8863B95320335A5300449D3B /* ShellScript */,
+				8863B95320335A5300449D3B /* Run Script */,
 				8873491B11499ACDBA78E010 /* [CP] Embed Pods Frameworks */,
 				6C011E8A1EA2445E7876AE4E /* [CP] Copy Pods Resources */,
 			);
@@ -394,14 +406,18 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8863B95320335A5300449D3B /* ShellScript */ = {
+		8863B95320335A5300449D3B /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ChartsRealm.framework",
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
