@@ -7,13 +7,29 @@
 //
 
 import UIKit
+import Charts
 
 class ChartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        var rect = view.bounds
+        rect.origin.y += 20
+        rect.size.height -= 20
+        let barChartView = BarChartView(frame: rect)
+        let entry = [
+            BarChartDataEntry(x: 10, y: 30),
+            BarChartDataEntry(x: 20, y: 20),
+            BarChartDataEntry(x: 30, y: 40),
+            BarChartDataEntry(x: 40, y: 10),
+            BarChartDataEntry(x: 50, y: 30)
+        ]
+        let set = [
+            BarChartDataSet(values: entry, label: "Data")
+        ]
+        barChartView.data = BarChartData(dataSets: set)
+        view.addSubview(barChartView)
     }
 
     override func didReceiveMemoryWarning() {
