@@ -50,7 +50,7 @@ class SettingsViewController: UIViewController, ChartViewDelegate {
                                        locations: colorLocations)
         
         let line = LineChartDataSet(values: lineChartEntry, label: "test")
-        // line.colors = [NSUIColor.black]
+        // e.colors = [NSUIColor.black]
         line.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0)
         line.drawFilledEnabled = true
         line.mode = .horizontalBezier

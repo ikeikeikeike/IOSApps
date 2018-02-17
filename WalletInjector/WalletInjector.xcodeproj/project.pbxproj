@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		64ABBFCD9B160A2FFDFF0301 /* Pods_WalletInjectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D93534320640FB2B35A4413 /* Pods_WalletInjectorUITests.framework */; };
 		6A31E1FF830C453DB0DD649F /* Pods_WalletInjectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F19E51EB1F4AF0EF115517 /* Pods_WalletInjectorTests.framework */; };
+		885654C820382C3A00064C73 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654C720382C3A00064C73 /* RxSwift.framework */; };
+		885654CA20382C4D00064C73 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654C920382C4D00064C73 /* RxCocoa.framework */; };
+		885654CC20382C5F00064C73 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654CB20382C5F00064C73 /* RxBlocking.framework */; };
+		885654CE20382C8000064C73 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654CD20382C8000064C73 /* RxMoya.framework */; };
+		885654D020382CD700064C73 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654CF20382CD700064C73 /* Alamofire.framework */; };
+		885654D220382CED00064C73 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654D120382CED00064C73 /* Moya.framework */; };
+		885654D420382CFB00064C73 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654D320382CFA00064C73 /* ReactiveMoya.framework */; };
+		885654D620382D0E00064C73 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654D520382D0E00064C73 /* ReactiveSwift.framework */; };
+		885654D820382D3800064C73 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654D720382D3800064C73 /* Result.framework */; };
 		8863B95220335A1000449D3B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95120335A1000449D3B /* Charts.framework */; };
 		8863B95720335F6E00449D3B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95420335F6E00449D3B /* RealmSwift.framework */; };
 		8863B95820335F6E00449D3B /* ChartsRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95520335F6E00449D3B /* ChartsRealm.framework */; };
@@ -48,6 +57,15 @@
 		3D93534320640FB2B35A4413 /* Pods_WalletInjectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		783F1298C489F92F474581F1 /* Pods-WalletInjector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.debug.xcconfig"; sourceTree = "<group>"; };
 		80F19E51EB1F4AF0EF115517 /* Pods_WalletInjectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletInjectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		885654C720382C3A00064C73 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		885654C920382C4D00064C73 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		885654CB20382C5F00064C73 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		885654CD20382C8000064C73 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		885654CF20382CD700064C73 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		885654D120382CED00064C73 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		885654D320382CFA00064C73 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		885654D520382D0E00064C73 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		885654D720382D3800064C73 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		8863B95120335A1000449D3B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		8863B95420335F6E00449D3B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		8863B95520335F6E00449D3B /* ChartsRealm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartsRealm.framework; path = Carthage/Build/iOS/ChartsRealm.framework; sourceTree = "<group>"; };
@@ -77,6 +95,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885654D820382D3800064C73 /* Result.framework in Frameworks */,
+				885654D620382D0E00064C73 /* ReactiveSwift.framework in Frameworks */,
+				885654D420382CFB00064C73 /* ReactiveMoya.framework in Frameworks */,
+				885654D220382CED00064C73 /* Moya.framework in Frameworks */,
+				885654D020382CD700064C73 /* Alamofire.framework in Frameworks */,
+				885654CE20382C8000064C73 /* RxMoya.framework in Frameworks */,
+				885654CC20382C5F00064C73 /* RxBlocking.framework in Frameworks */,
+				885654CA20382C4D00064C73 /* RxCocoa.framework in Frameworks */,
+				885654C820382C3A00064C73 /* RxSwift.framework in Frameworks */,
 				8863B95920335F6E00449D3B /* Realm.framework in Frameworks */,
 				8863B95720335F6E00449D3B /* RealmSwift.framework in Frameworks */,
 				8863B95820335F6E00449D3B /* ChartsRealm.framework in Frameworks */,
@@ -174,6 +201,15 @@
 		FEFC684FF0D19EC97317EEE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				885654D720382D3800064C73 /* Result.framework */,
+				885654D520382D0E00064C73 /* ReactiveSwift.framework */,
+				885654D320382CFA00064C73 /* ReactiveMoya.framework */,
+				885654D120382CED00064C73 /* Moya.framework */,
+				885654CF20382CD700064C73 /* Alamofire.framework */,
+				885654CD20382C8000064C73 /* RxMoya.framework */,
+				885654CB20382C5F00064C73 /* RxBlocking.framework */,
+				885654C920382C4D00064C73 /* RxCocoa.framework */,
+				885654C720382C3A00064C73 /* RxSwift.framework */,
 				8863B95520335F6E00449D3B /* ChartsRealm.framework */,
 				8863B95620335F6E00449D3B /* Realm.framework */,
 				8863B95420335F6E00449D3B /* RealmSwift.framework */,
@@ -416,6 +452,15 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ChartsRealm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
