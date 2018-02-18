@@ -22,6 +22,8 @@
 		8863B95720335F6E00449D3B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95420335F6E00449D3B /* RealmSwift.framework */; };
 		8863B95820335F6E00449D3B /* ChartsRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95520335F6E00449D3B /* ChartsRealm.framework */; };
 		8863B95920335F6E00449D3B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95620335F6E00449D3B /* Realm.framework */; };
+		886A9839203991310057F6EE /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A9838203991300057F6EE /* Swinject.framework */; };
+		886A983B203991420057F6EE /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A983A203991420057F6EE /* SwinjectStoryboard.framework */; };
 		88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC27E20302B6F00874726 /* AppDelegate.swift */; };
 		88DAC28420302B6F00874726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28220302B6F00874726 /* Main.storyboard */; };
 		88DAC28620302B6F00874726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28520302B6F00874726 /* Assets.xcassets */; };
@@ -70,6 +72,9 @@
 		8863B95420335F6E00449D3B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		8863B95520335F6E00449D3B /* ChartsRealm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartsRealm.framework; path = Carthage/Build/iOS/ChartsRealm.framework; sourceTree = "<group>"; };
 		8863B95620335F6E00449D3B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		886A98362039911C0057F6EE /* SwinjectStoryboard.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwinjectStoryboard.framework.dSYM; path = Carthage/Build/iOS/SwinjectStoryboard.framework.dSYM; sourceTree = "<group>"; };
+		886A9838203991300057F6EE /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		886A983A203991420057F6EE /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 		88DAC27B20302B6F00874726 /* WalletInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DAC27E20302B6F00874726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DAC28320302B6F00874726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886A983B203991420057F6EE /* SwinjectStoryboard.framework in Frameworks */,
+				886A9839203991310057F6EE /* Swinject.framework in Frameworks */,
 				885654D820382D3800064C73 /* Result.framework in Frameworks */,
 				885654D620382D0E00064C73 /* ReactiveSwift.framework in Frameworks */,
 				885654D420382CFB00064C73 /* ReactiveMoya.framework in Frameworks */,
@@ -145,6 +152,54 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		886A9830203855A10057F6EE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				886A9831203855B30057F6EE /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		886A9831203855B30057F6EE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88DAC2B220302D9D00874726 /* ChartViewController.swift */,
+				88DAC2B420302DB600874726 /* SettingsViewController.swift */,
+				88DAC2B020302D5900874726 /* RootTabBarController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		886A9832203856020057F6EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		886A9833203856100057F6EE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				886A9835203856400057F6EE /* Entity */,
+				886A98342038562E0057F6EE /* Repo */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		886A98342038562E0057F6EE /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		886A9835203856400057F6EE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		88DAC27220302B6F00874726 = {
 			isa = PBXGroup;
 			children = (
@@ -170,10 +225,10 @@
 		88DAC27D20302B6F00874726 /* WalletInjector */ = {
 			isa = PBXGroup;
 			children = (
+				886A9832203856020057F6EE /* Data */,
+				886A9833203856100057F6EE /* Domain */,
+				886A9830203855A10057F6EE /* UI */,
 				88DAC27E20302B6F00874726 /* AppDelegate.swift */,
-				88DAC2B020302D5900874726 /* RootTabBarController.swift */,
-				88DAC2B220302D9D00874726 /* ChartViewController.swift */,
-				88DAC2B420302DB600874726 /* SettingsViewController.swift */,
 				88DAC28220302B6F00874726 /* Main.storyboard */,
 				88DAC28520302B6F00874726 /* Assets.xcassets */,
 				88DAC28720302B6F00874726 /* LaunchScreen.storyboard */,
@@ -203,6 +258,9 @@
 		FEFC684FF0D19EC97317EEE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				886A983A203991420057F6EE /* SwinjectStoryboard.framework */,
+				886A9838203991300057F6EE /* Swinject.framework */,
+				886A98362039911C0057F6EE /* SwinjectStoryboard.framework.dSYM */,
 				885654D720382D3800064C73 /* Result.framework */,
 				885654D520382D0E00064C73 /* ReactiveSwift.framework */,
 				885654D320382CFA00064C73 /* ReactiveMoya.framework */,
@@ -493,6 +551,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
