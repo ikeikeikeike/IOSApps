@@ -10,7 +10,7 @@ import SwinjectStoryboard
 extension SwinjectStoryboard {
     @objc class func setup() {
         Injector.initialize()
-        
+
         _ = SwinjectStoryboard.defaultContainer
 
     }

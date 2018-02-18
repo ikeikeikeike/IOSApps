@@ -26,6 +26,8 @@
 		886A983B203991420057F6EE /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A983A203991420057F6EE /* SwinjectStoryboard.framework */; };
 		886A983E2039A4390057F6EE /* SwinjectStoryboard+Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */; };
 		886A98402039A5690057F6EE /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983F2039A5690057F6EE /* Injector.swift */; };
+		88DA4FDC2039ADBB002BF13E /* CoincheckJPYAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */; };
+		88DA4FDF2039B931002BF13E /* CoincheckJPYStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */; };
 		88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC27E20302B6F00874726 /* AppDelegate.swift */; };
 		88DAC28420302B6F00874726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28220302B6F00874726 /* Main.storyboard */; };
 		88DAC28620302B6F00874726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28520302B6F00874726 /* Assets.xcassets */; };
@@ -79,6 +81,8 @@
 		886A983A203991420057F6EE /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 		886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Injector.swift"; sourceTree = "<group>"; };
 		886A983F2039A5690057F6EE /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYAPI.swift; sourceTree = "<group>"; };
+		88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYStore.swift; sourceTree = "<group>"; };
 		88DAC27B20302B6F00874726 /* WalletInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DAC27E20302B6F00874726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DAC28320302B6F00874726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,6 +182,9 @@
 		886A9832203856020057F6EE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				886A9835203856400057F6EE /* Entity */,
+				886A98342038562E0057F6EE /* Repo */,
+				88DA4FD72039ACF8002BF13E /* Store */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -185,8 +192,9 @@
 		886A9833203856100057F6EE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				886A9835203856400057F6EE /* Entity */,
-				886A98342038562E0057F6EE /* Repo */,
+				88DA4FDA2039AD33002BF13E /* Model */,
+				88DA4FD92039AD2F002BF13E /* UseCase */,
+				88DA4FD82039AD2B002BF13E /* Translator */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -210,6 +218,44 @@
 			children = (
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		88DA4FD72039ACF8002BF13E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				88DA4FDD2039AE59002BF13E /* API */,
+				88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		88DA4FD82039AD2B002BF13E /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		88DA4FD92039AD2F002BF13E /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		88DA4FDA2039AD33002BF13E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88DA4FDD2039AE59002BF13E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		88DAC27220302B6F00874726 = {
@@ -616,6 +662,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */,
+				88DA4FDF2039B931002BF13E /* CoincheckJPYStore.swift in Sources */,
+				88DA4FDC2039ADBB002BF13E /* CoincheckJPYAPI.swift in Sources */,
 				886A98402039A5690057F6EE /* Injector.swift in Sources */,
 				886A983E2039A4390057F6EE /* SwinjectStoryboard+Injector.swift in Sources */,
 				88DAC2B120302D5900874726 /* RootTabBarController.swift in Sources */,
