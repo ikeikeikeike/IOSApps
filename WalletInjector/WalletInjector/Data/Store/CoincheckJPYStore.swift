@@ -5,12 +5,12 @@
 //  Created by Tatsuo Ikeda on 2018/02/18.
 //  Copyright © 2018 Tatsuo Ikeda. All rights reserved.
 //
-import Foundation
 import Moya
-import Result
+import RxMoya
+import RxSwift
 
 protocol CoincheckJPYStore {
-    func request(handler: @escaping (Result<Response, MoyaError>) -> Void)
+    func request(handler: @escaping (SingleEvent<[TradeEntity]>) -> Void)
 }
 
 struct CoincheckJPYStoreImpl: CoincheckJPYStore {
@@ -22,8 +22,15 @@ struct CoincheckJPYStoreImpl: CoincheckJPYStore {
         return MoyaProvider<CoincheckJPYAPI>(stubClosure: stubClosure, plugins: plugins)
     }()
 
-    public func request(handler: @escaping (Result<Response, MoyaError>) -> Void) {
-        provider.request(.trade) { result in handler(result) }
+    fileprivate let decoder = JSONDecoder()
+    fileprivate let disposeBag = DisposeBag()
+    
+    public func request(handler: @escaping (SingleEvent<[TradeEntity]>) -> Void) {
+        provider.rx.request(.trades)
+            .filterSuccessfulStatusCodes()
+            .map([TradeEntity].self, atKeyPath: "trades", using: decoder, failsOnEmptyData: true)
+            .subscribe(handler)
+            .disposed(by: disposeBag)
     }
 }
 

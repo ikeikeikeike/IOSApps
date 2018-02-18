@@ -6,11 +6,11 @@
 //  Copyright © 2018 Tatsuo Ikeda. All rights reserved.
 //
 
-struct Trade: Codable {
+public struct TradeEntity: Codable {
     let unixtime: Int
     let price: Float
     let amount: Float
-    
+
     private enum CodingKeys: String, CodingKey {
         case unixtime
         case price

@@ -8,7 +8,7 @@
 import Moya
 
 enum CoincheckJPYAPI {
-    case trade
+    case trades
 }
 
 // MARK: - TargetType Protocol Implementation
