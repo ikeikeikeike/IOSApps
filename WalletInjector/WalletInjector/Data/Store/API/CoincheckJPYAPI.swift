@@ -7,22 +7,11 @@
 //
 import Moya
 
-struct CoincheckJPY: Codable {
-    let id: Int
-    let left: Float
-    let right: Float
-
-    private enum CodingKeys: String, CodingKey {
-        case id
-        case left
-        case right
-    }
-}
-
 enum CoincheckJPYAPI {
-    case fetch
+    case trade
 }
 
+// MARK: - TargetType Protocol Implementation
 extension CoincheckJPYAPI: TargetType {
     var baseURL: URL {
         return URL(string: "https://api.bitcoincharts.com/v1")!

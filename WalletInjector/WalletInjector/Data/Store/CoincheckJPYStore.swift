@@ -7,52 +7,28 @@
 //
 import Foundation
 import Moya
-import RxMoya
-import RxSwift
+import Result
 
-protocol CoincheckJPYData {
-    func requestAPI(handler: @escaping (PrimitiveSequence<SingleTrait, Response>) -> Void)
+protocol CoincheckJPYStore {
+    func request(handler: @escaping (Result<Response, MoyaError>) -> Void)
 }
 
-struct CoincheckJPYDataImpl: CoincheckJPYData {
+struct CoincheckJPYStoreImpl: CoincheckJPYStore {
 
     fileprivate let provider: MoyaProvider<CoincheckJPYAPI> = {
-        let stubClosure = { (target: CoincheckJPYAPI) -> StubBehavior in return .never }
+        let stubClosure = { (target: CoincheckJPYAPI) -> StubBehavior in .never }
         let networkLoggerPlugin = NetworkLoggerPlugin(cURL: true)
         let plugins = [networkLoggerPlugin]
         return MoyaProvider<CoincheckJPYAPI>(stubClosure: stubClosure, plugins: plugins)
     }()
 
-    fileprivate let disposeBag = DisposeBag()
-    fileprivate let didFinishGetMoneiesSubject = PublishSubject<[CoincheckJPY]>()
-
-    public func requestAPI(handler: @escaping (PrimitiveSequence<SingleTrait, Response>) -> Void) {
-        let unko = provider.rx
-            .request(CoincheckJPYAPI.fetch)
-            .map { (response) -> CoincheckJPY? in
-                return try? JSONDecoder().decode(CoincheckJPY.self, from: response.data)
-            }
-//            .subscribe(onSuccess: { (response) in
-//                if let unwrappedResponse = response {
-//                    print(unwrappedResponse)
-//                } else {
-//                    print("error")
-//                }
-//            }, onError: { (error) in
-//                print("error")
-//            })
-//            .disposed(by: disposeBag)
-        
-        unko    
-
-//        let request = PublishAccessTokenNetworkRequest()
-//        Session.send(request, callbackQueue: nil, handler: handler)
+    public func request(handler: @escaping (Result<Response, MoyaError>) -> Void) {
+        provider.request(.trade) { result in handler(result) }
     }
-
 }
 
-//struct CoincheckJPYDataFactory {
-//    static func createAuthDataStore() -> AuthDataStore {
-//        return AuthDataStoreNetworkImpl()
-//    }
-//}
+struct CoincheckJPYStoreFactory {
+    static func createCoincheckJPYStore() -> CoincheckJPYStore {
+        return CoincheckJPYStoreImpl()
+    }
+}
