@@ -15,9 +15,9 @@ public protocol CoincheckJPYRepo {
 
 public struct CoincheckJPYRepoImpl: CoincheckJPYRepo {
     public static let shared: CoincheckJPYRepo = CoincheckJPYRepoImpl()
+    fileprivate let store: CoincheckJPYStore! = Injector.ct.resolve(CoincheckJPYStore.self)
 
     public func request(handler: @escaping (SingleEvent<[TradeEntity]>) -> Void) {
-        let store = CoincheckJPYStoreFactory.createCoincheckJPYStore()
         store.request(handler: handler)
     }
 }

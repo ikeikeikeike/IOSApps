@@ -31,7 +31,7 @@
 		886A9839203991310057F6EE /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A9838203991300057F6EE /* Swinject.framework */; };
 		886A983B203991420057F6EE /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A983A203991420057F6EE /* SwinjectStoryboard.framework */; };
 		886A983E2039A4390057F6EE /* SwinjectStoryboard+Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */; };
-		886A98402039A5690057F6EE /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983F2039A5690057F6EE /* Injector.swift */; };
+		886A98402039A5690057F6EE /* Swinject+Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983F2039A5690057F6EE /* Swinject+Injector.swift */; };
 		88DA4FDC2039ADBB002BF13E /* CoincheckJPYAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */; };
 		88DA4FDF2039B931002BF13E /* CoincheckJPYStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */; };
 		88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC27E20302B6F00874726 /* AppDelegate.swift */; };
@@ -92,7 +92,7 @@
 		886A9838203991300057F6EE /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		886A983A203991420057F6EE /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 		886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Injector.swift"; sourceTree = "<group>"; };
-		886A983F2039A5690057F6EE /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		886A983F2039A5690057F6EE /* Swinject+Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swinject+Injector.swift"; sourceTree = "<group>"; };
 		88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYAPI.swift; sourceTree = "<group>"; };
 		88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYStore.swift; sourceTree = "<group>"; };
 		88DAC27B20302B6F00874726 /* WalletInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -304,7 +304,7 @@
 				886A9832203856020057F6EE /* Data */,
 				886A9833203856100057F6EE /* Domain */,
 				886A9830203855A10057F6EE /* UI */,
-				886A983F2039A5690057F6EE /* Injector.swift */,
+				886A983F2039A5690057F6EE /* Swinject+Injector.swift */,
 				886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */,
 				88DAC27E20302B6F00874726 /* AppDelegate.swift */,
 				88DAC28220302B6F00874726 /* Main.storyboard */,
@@ -685,7 +685,7 @@
 				88492622203A046600436860 /* TradeEntity.swift in Sources */,
 				88DA4FDF2039B931002BF13E /* CoincheckJPYStore.swift in Sources */,
 				88DA4FDC2039ADBB002BF13E /* CoincheckJPYAPI.swift in Sources */,
-				886A98402039A5690057F6EE /* Injector.swift in Sources */,
+				886A98402039A5690057F6EE /* Swinject+Injector.swift in Sources */,
 				886A983E2039A4390057F6EE /* SwinjectStoryboard+Injector.swift in Sources */,
 				88DAC2B120302D5900874726 /* RootTabBarController.swift in Sources */,
 				88DAC2B320302D9D00874726 /* ChartViewController.swift in Sources */,
@@ -860,6 +860,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9QFL4ZF2R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -879,6 +880,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9QFL4ZF2R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

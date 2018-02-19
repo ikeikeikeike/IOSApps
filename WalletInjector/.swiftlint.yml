@@ -48,7 +48,8 @@ type_name:
 
 identifier_name:
   min_length: # only min_length
-    error: 4 # only error
+    warning: 1
+    error: 1
   excluded: # excluded via string array
     - id
     - URL

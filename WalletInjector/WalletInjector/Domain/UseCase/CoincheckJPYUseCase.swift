@@ -16,11 +16,7 @@ public protocol CoincheckJPYUseCase {
 
 public struct CoincheckJPYUseCaseImpl: CoincheckJPYUseCase {
 
-    private let coincheckJPYRepo: CoincheckJPYRepo
-
-    public init(coincheckJPYRepo: CoincheckJPYRepo) {
-        self.coincheckJPYRepo = coincheckJPYRepo
-    }
+    fileprivate let coincheckJPYRepo: CoincheckJPYRepo! = Injector.ct.resolve(CoincheckJPYRepo.self)
 
     public func request(handler: @escaping (SingleEvent<[TradeModel]>) -> Void) {
         coincheckJPYRepo.request { event in
