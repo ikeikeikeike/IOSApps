@@ -11,8 +11,14 @@ import Charts
 
 class ChartViewController: UIViewController {
 
+    var presenter: ChartPresenter! {
+        didSet { presenter.view = self }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        presenter.setupUI()
 
         var rect = view.bounds
         rect.origin.y += 20
@@ -48,3 +54,5 @@ class ChartViewController: UIViewController {
     */
 
 }
+
+extension ChartViewController: ChartPresenterView {}

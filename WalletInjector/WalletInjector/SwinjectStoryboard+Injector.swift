@@ -11,7 +11,12 @@ extension SwinjectStoryboard {
     @objc class func setup() {
         Injector.initialize()
 
-        _ = SwinjectStoryboard.defaultContainer
+        let ct = SwinjectStoryboard.defaultContainer
 
+        ct.register(ChartPresenter.self) { _ in ChartPresenterImpl() }
+        ct.storyboardInitCompleted(ChartViewController.self) { r, vc in
+            vc.presenter = r.resolve(ChartPresenter.self)
+        }
     }
+
 }
