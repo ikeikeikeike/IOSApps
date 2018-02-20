@@ -8,17 +8,15 @@
 import Moya
 
 protocol CoincheckJPYProvider {
-    var api: MoyaProvider<CoincheckJPYAPI> { get set }
+    var api: MoyaProvider<CoincheckJPYAPI> { get }
 }
 
 struct CoincheckJPYProviderImpl: CoincheckJPYProvider {
-    var api: MoyaProvider<CoincheckJPYAPI>
-
-    init() {
+    var api: MoyaProvider<CoincheckJPYAPI> = {
         let stubClosure = { (target: CoincheckJPYAPI) -> StubBehavior in .never }
         let networkLoggerPlugin = NetworkLoggerPlugin(cURL: true)
         let plugins = [networkLoggerPlugin]
 
-        api = MoyaProvider<CoincheckJPYAPI>(stubClosure: stubClosure, plugins: plugins)
-    }
+        return MoyaProvider<CoincheckJPYAPI>(stubClosure: stubClosure, plugins: plugins)
+    }()
 }
