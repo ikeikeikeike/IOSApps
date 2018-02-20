@@ -34,6 +34,7 @@
 		886A98402039A5690057F6EE /* Swinject+Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983F2039A5690057F6EE /* Swinject+Injector.swift */; };
 		88A12B83203B071D005E3360 /* CoincheckJPYProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B82203B071D005E3360 /* CoincheckJPYProvider.swift */; };
 		88A12B8F203C0B23005E3360 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B8E203C0B23005E3360 /* ChartPresenter.swift */; };
+		88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B91203C7A9C005E3360 /* CSVDecoder.swift */; };
 		88DA4FDC2039ADBB002BF13E /* CoincheckJPYAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */; };
 		88DA4FDF2039B931002BF13E /* CoincheckJPYStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */; };
 		88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC27E20302B6F00874726 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 		88DAC2B120302D5900874726 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B020302D5900874726 /* RootTabBarController.swift */; };
 		88DAC2B320302D9D00874726 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B220302D9D00874726 /* ChartViewController.swift */; };
 		88DAC2B520302DB600874726 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B420302DB600874726 /* SettingsViewController.swift */; };
+		88E7231F203C8A820085AD2F /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E7231E203C8A820085AD2F /* CSV.framework */; };
 		8B8CF6C1E76B7AEAD7144BE9 /* Pods_WalletInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08763C3B289EBDA1CCB3D87C /* Pods_WalletInjector.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,7 @@
 		886A983F2039A5690057F6EE /* Swinject+Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swinject+Injector.swift"; sourceTree = "<group>"; };
 		88A12B82203B071D005E3360 /* CoincheckJPYProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYProvider.swift; sourceTree = "<group>"; };
 		88A12B8E203C0B23005E3360 /* ChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
+		88A12B91203C7A9C005E3360 /* CSVDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDecoder.swift; sourceTree = "<group>"; };
 		88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYAPI.swift; sourceTree = "<group>"; };
 		88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYStore.swift; sourceTree = "<group>"; };
 		88DAC27B20302B6F00874726 /* WalletInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +117,7 @@
 		88DAC2B020302D5900874726 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		88DAC2B220302D9D00874726 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		88DAC2B420302DB600874726 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		88E7231E203C8A820085AD2F /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
 		89E9D8DFCE3C78184AFA1345 /* Pods-WalletInjectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A101EFBA6074C88D7FAD79B3 /* Pods-WalletInjector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.release.xcconfig"; sourceTree = "<group>"; };
 		A36C6796DB419E3A4F50F654 /* Pods-WalletInjectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E7231F203C8A820085AD2F /* CSV.framework in Frameworks */,
 				886A983B203991420057F6EE /* SwinjectStoryboard.framework in Frameworks */,
 				886A9839203991310057F6EE /* Swinject.framework in Frameworks */,
 				885654D820382D3800064C73 /* Result.framework in Frameworks */,
@@ -305,6 +310,14 @@
 			path = "New Group/New Group/Root";
 			sourceTree = "<group>";
 		};
+		88A12B90203C7A8A005E3360 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				88A12B91203C7A9C005E3360 /* CSVDecoder.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		88DA4FD72039ACF8002BF13E /* Store */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +386,7 @@
 		88DAC27D20302B6F00874726 /* WalletInjector */ = {
 			isa = PBXGroup;
 			children = (
+				88A12B90203C7A8A005E3360 /* Utils */,
 				886A9832203856020057F6EE /* Data */,
 				886A9833203856100057F6EE /* Domain */,
 				886A9830203855A10057F6EE /* UI */,
@@ -408,6 +422,7 @@
 		FEFC684FF0D19EC97317EEE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88E7231E203C8A820085AD2F /* CSV.framework */,
 				886A983A203991420057F6EE /* SwinjectStoryboard.framework */,
 				886A9838203991300057F6EE /* Swinject.framework */,
 				886A98362039911C0057F6EE /* SwinjectStoryboard.framework.dSYM */,
@@ -703,6 +718,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CSV.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -765,6 +781,7 @@
 				88DAC2B320302D9D00874726 /* ChartViewController.swift in Sources */,
 				88492620203A010300436860 /* CoincheckJPYRepo.swift in Sources */,
 				88DAC2B520302DB600874726 /* SettingsViewController.swift in Sources */,
+				88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */,
 				88492624203A05BF00436860 /* CoincheckJPYUseCase.swift in Sources */,
 				8849262A203A07DF00436860 /* TradeModel.swift in Sources */,
 			);

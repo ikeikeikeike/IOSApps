@@ -5,6 +5,7 @@
 //  Created by Tatsuo Ikeda on 2018/02/18.
 //  Copyright © 2018 Tatsuo Ikeda. All rights reserved.
 //
+import CSV
 import Moya
 import RxMoya
 import RxSwift
@@ -15,12 +16,16 @@ protocol CoincheckJPYStore {
 
 struct CoincheckJPYStoreImpl: CoincheckJPYStore {
     fileprivate let provider: CoincheckJPYProvider! = Injector.ct.resolve(CoincheckJPYProvider.self)
-    fileprivate let decoder = JSONDecoder()
 
     public func request(handler: @escaping (SingleEvent<[TradeEntity]>) -> Void) {
         _ = provider.api.rx.request(.trades)
             .filterSuccessfulStatusCodes()
-            .map([TradeEntity].self, atKeyPath: "trades", using: decoder, failsOnEmptyData: true)
+            .mapString()
+            .map({ result in
+                return (try CSVReader(string: result)).map({ r -> TradeEntity in
+                    return TradeEntity(unixtime: Int(r[0]), price: Float(r[1]), amount: Float(r[2]))
+                })
+            })
             .subscribe(handler)
     }
 }

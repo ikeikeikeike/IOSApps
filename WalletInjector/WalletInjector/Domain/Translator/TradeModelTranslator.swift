@@ -9,9 +9,9 @@ import Foundation
 
 internal struct TradeModelTranslator: Translator {
     internal func translate(_ entity: TradeEntity) -> TradeModel {
-        let unixtime: Int = entity.unixtime
-        let price: Float = entity.price
-        let amount: Float = entity.amount
+        let unixtime: Int? = entity.unixtime
+        let price: Float? = entity.price
+        let amount: Float? = entity.amount
 
         return TradeModel(unixtime: unixtime, price: price, amount: amount)
     }

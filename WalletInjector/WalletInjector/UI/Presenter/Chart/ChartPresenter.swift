@@ -32,13 +32,13 @@ public class ChartPresenterImpl: ChartPresenter {
                 print("success")
                 print("success")
 
-                print(trades)
+                print(trades.prefix(30))
 
             case .error(let error):
                 print("error")
                 print("error")
                 print("error")
-                
+
                 print(error)
             }
         }
