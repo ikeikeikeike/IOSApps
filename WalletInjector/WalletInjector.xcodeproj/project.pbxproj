@@ -255,9 +255,7 @@
 		88A12B85203B2CFA005E3360 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				88A12B8D203C0AAF005E3360 /* Root */,
 				88A12B8B203C0AAD005E3360 /* Chart */,
-				88A12B8C203C0AAE005E3360 /* Settings */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -292,22 +290,6 @@
 				88A12B8E203C0B23005E3360 /* ChartPresenter.swift */,
 			);
 			path = Chart;
-			sourceTree = "<group>";
-		};
-		88A12B8C203C0AAE005E3360 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Settings;
-			path = "New Group/Settings";
-			sourceTree = "<group>";
-		};
-		88A12B8D203C0AAF005E3360 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Root;
-			path = "New Group/New Group/Root";
 			sourceTree = "<group>";
 		};
 		88A12B90203C7A8A005E3360 /* Utils */ = {
@@ -386,10 +368,10 @@
 		88DAC27D20302B6F00874726 /* WalletInjector */ = {
 			isa = PBXGroup;
 			children = (
-				88A12B90203C7A8A005E3360 /* Utils */,
 				886A9832203856020057F6EE /* Data */,
 				886A9833203856100057F6EE /* Domain */,
 				886A9830203855A10057F6EE /* UI */,
+				88A12B90203C7A8A005E3360 /* Utils */,
 				886A983F2039A5690057F6EE /* Swinject+Injector.swift */,
 				886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */,
 				88DAC27E20302B6F00874726 /* AppDelegate.swift */,

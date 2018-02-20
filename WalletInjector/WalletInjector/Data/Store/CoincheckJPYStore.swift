@@ -23,7 +23,7 @@ struct CoincheckJPYStoreImpl: CoincheckJPYStore {
             .mapString()
             .map({ result in
                 return (try CSVReader(string: result)).map({ r -> TradeEntity in
-                    return TradeEntity(unixtime: Int(r[0]), price: Float(r[1]), amount: Float(r[2]))
+                    return TradeEntity(unixtime: Int(r[0]), price: Double(r[1]), amount: Double(r[2]))
                 })
             })
             .subscribe(handler)

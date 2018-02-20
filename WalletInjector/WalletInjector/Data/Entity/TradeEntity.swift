@@ -8,8 +8,8 @@
 
 public struct TradeEntity: Codable {
     let unixtime: Int?
-    let price: Float?
-    let amount: Float?
+    let price: Double?
+    let amount: Double?
 
     private enum CodingKeys: String, CodingKey {
         case unixtime

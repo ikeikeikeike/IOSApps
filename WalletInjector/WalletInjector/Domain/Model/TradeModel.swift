@@ -8,6 +8,6 @@
 
 public struct TradeModel {
     public let unixtime: Int?
-    public let price: Float?
-    public let amount: Float?
+    public let price: Double?
+    public let amount: Double?
 }
