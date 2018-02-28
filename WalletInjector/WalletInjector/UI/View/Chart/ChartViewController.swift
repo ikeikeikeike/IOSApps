@@ -9,33 +9,19 @@
 import UIKit
 import Charts
 
-class ChartViewController: UIViewController {
+class ChartViewController: UIViewController, ChartViewDelegate {
 
     var presenter: ChartPresenter! {
         didSet { presenter.view = self }
     }
 
+    var chartVM: ChartViewModel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         presenter.setupUI()
-
-        var rect = view.bounds
-        rect.origin.y += 20
-        rect.size.height -= 20
-        let barChartView = BarChartView(frame: rect)
-        let entry = [
-            BarChartDataEntry(x: 10, y: 30),
-            BarChartDataEntry(x: 20, y: 20),
-            BarChartDataEntry(x: 30, y: 40),
-            BarChartDataEntry(x: 40, y: 10),
-            BarChartDataEntry(x: 50, y: 30)
-        ]
-        let set = [
-            BarChartDataSet(values: entry, label: "Data")
-        ]
-        barChartView.data = BarChartData(dataSets: set)
-        view.addSubview(barChartView)
+        presenter.refreshData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,6 +39,20 @@ class ChartViewController: UIViewController {
     }
     */
 
+    @IBOutlet var chartView: LineChartView!
 }
 
-extension ChartViewController: ChartPresenterView {}
+extension ChartViewController: ChartPresenterView {
+
+    func reloadView(chartVM: ChartViewModel) {
+        let chartView: LineChartView = LineChartView()
+        chartView.delegate = self
+        chartView.frame = view.frame
+
+        chartVM.setChartView(chartView: chartView)
+        chartVM.refresh()
+        view.addSubview(chartView)
+
+        self.chartVM = chartVM
+    }
+}

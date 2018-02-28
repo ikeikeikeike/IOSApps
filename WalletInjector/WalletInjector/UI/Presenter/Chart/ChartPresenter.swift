@@ -8,40 +8,47 @@
 
 public protocol ChartPresenter {
 
-    weak var view: ChartPresenterView? { get set }
+    weak var view: ChartPresenterView! { get set }
 
     func setupUI()
+    func refreshData()
 }
 
 public protocol ChartPresenterView: class {
-
+    func reloadView(chartVM: ChartViewModel)
 }
 
 public class ChartPresenterImpl: ChartPresenter {
 
-    weak public var view: ChartPresenterView?
+    weak public var view: ChartPresenterView!
 
     let useCase: CoincheckJPYUseCase! = Injector.ct.resolve(CoincheckJPYUseCase.self)
-    fileprivate var tradeModel: TradeModel!
+
+    fileprivate var tradeModels: [TradeModel] = [] {
+        didSet {
+            reloadView(tradeModels: tradeModels)
+        }
+    }
 
     public func setupUI() {
+
+    }
+
+    public func refreshData() {
         useCase.request { result in
             switch result {
             case .success(let trades):
-                print("success")
-                print("success")
-                print("success")
-
-                print(trades.prefix(30))
+                self.tradeModels = trades
 
             case .error(let error):
-                print("error")
-                print("error")
-                print("error")
-
-                print(error)
+                print(error) // TODO: Logger
             }
         }
+    }
+
+    private func reloadView(tradeModels: [TradeModel]) {
+        let chartVM = ChartViewModelImpl(tradeModels: tradeModels)
+        view.reloadView(chartVM: chartVM)
     }
 
 }

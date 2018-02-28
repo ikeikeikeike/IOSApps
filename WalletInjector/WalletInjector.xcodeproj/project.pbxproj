@@ -46,6 +46,7 @@
 		88DAC2B120302D5900874726 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B020302D5900874726 /* RootTabBarController.swift */; };
 		88DAC2B320302D9D00874726 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B220302D9D00874726 /* ChartViewController.swift */; };
 		88DAC2B520302DB600874726 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC2B420302DB600874726 /* SettingsViewController.swift */; };
+		88E4FED82046F74200E0DF58 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E4FED72046F74200E0DF58 /* ChartViewModel.swift */; };
 		88E7231F203C8A820085AD2F /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E7231E203C8A820085AD2F /* CSV.framework */; };
 		8B8CF6C1E76B7AEAD7144BE9 /* Pods_WalletInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08763C3B289EBDA1CCB3D87C /* Pods_WalletInjector.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +118,7 @@
 		88DAC2B020302D5900874726 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		88DAC2B220302D9D00874726 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		88DAC2B420302DB600874726 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		88E4FED72046F74200E0DF58 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		88E7231E203C8A820085AD2F /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
 		89E9D8DFCE3C78184AFA1345 /* Pods-WalletInjectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A101EFBA6074C88D7FAD79B3 /* Pods-WalletInjector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		88A12B84203B2CE6005E3360 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				88E4FED72046F74200E0DF58 /* ChartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -764,6 +767,7 @@
 				88492620203A010300436860 /* CoincheckJPYRepo.swift in Sources */,
 				88DAC2B520302DB600874726 /* SettingsViewController.swift in Sources */,
 				88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */,
+				88E4FED82046F74200E0DF58 /* ChartViewModel.swift in Sources */,
 				88492624203A05BF00436860 /* CoincheckJPYUseCase.swift in Sources */,
 				8849262A203A07DF00436860 /* TradeModel.swift in Sources */,
 			);
