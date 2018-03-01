@@ -21,29 +21,17 @@ class RootSlideViewController: ButtonBarPagerTabStripViewController {
     }
 
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-
-        let coincheckJPY = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CoincheckJPY")
-        let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BitflyerJPY")
-        let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ZaifJPY")
-        let forthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Forth")
-        let fifthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Fifth")
-        let sixthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Sixth")
-        let seventhVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Seventh")
-        let eighthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Eighth")
-        let ninethVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Nineth")
-        let tenthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Tenth")
-
         return [
-            coincheckJPY,
-            secondVC,
-            thirdVC,
-            forthVC,
-            fifthVC,
-            sixthVC,
-            seventhVC,
-            eighthVC,
-            ninethVC,
-            tenthVC
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CoincheckJPY"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BitflyerJPY"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ZaifJPY"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Forth"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Fifth"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Sixth"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Seventh"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Eighth"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Nineth"),
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Tenth")
         ]
     }
 }

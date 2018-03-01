@@ -42,8 +42,7 @@ extension TradeAPI: TargetType {
 
     func symbol() -> String {
         switch self {
-//        case .zaifJPY:
-//            return "zaifJPY"
+//        case .zaifJPY: return "zaifJPY"
         default:
             return rawValue.firstLowercase()
         }
