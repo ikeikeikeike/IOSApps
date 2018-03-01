@@ -11,9 +11,9 @@ final class Injector {
     static let ct = Container()
 
     class func initialize() {
-        ct.register(CoincheckJPYProvider.self) { _ in CoincheckJPYProviderImpl() }
-        ct.register(CoincheckJPYStore.self) { _ in CoincheckJPYStoreImpl() }
-        ct.register(CoincheckJPYRepo.self) { _ in CoincheckJPYRepoImpl() }
-        ct.register(CoincheckJPYUseCase.self) { _ in CoincheckJPYUseCaseImpl() }
+        ct.register(TradeProvider.self) { _ in TradeProviderImpl() }
+        ct.register(TradeStore.self) { _ in TradeStoreImpl() }
+        ct.register(TradeRepo.self) { _ in TradeRepoImpl() }
+        ct.register(TradeUseCase.self) { _ in TradeUseCaseImpl() }
     }
 }

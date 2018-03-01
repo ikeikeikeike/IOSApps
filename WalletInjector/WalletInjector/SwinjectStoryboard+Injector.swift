@@ -23,6 +23,9 @@ extension SwinjectStoryboard {
         ct.storyboardInitCompleted(BitflyerJPYViewController.self) { r, vc in
             vc.presenter = r.resolve(ChartPresenter.self)
         }
+        ct.storyboardInitCompleted(ZaifJPYViewController.self) { r, vc in
+            vc.presenter = r.resolve(ChartPresenter.self)
+        }
 
     }
 

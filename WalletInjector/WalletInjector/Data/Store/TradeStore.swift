@@ -1,5 +1,5 @@
 //
-//  CoincheckJPYStore.swift
+//  TradeStore.swift
 //  WalletInjector
 //
 //  Created by Tatsuo Ikeda on 2018/02/18.
@@ -10,14 +10,14 @@ import Moya
 import RxMoya
 import RxSwift
 
-protocol CoincheckJPYStore {
-    func request(name: CoincheckJPYAPI, handler: @escaping (SingleEvent<[TradeEntity]>) -> Void)
+protocol TradeStore {
+    func request(name: TradeAPI, handler: @escaping (SingleEvent<[TradeEntity]>) -> Void)
 }
 
-struct CoincheckJPYStoreImpl: CoincheckJPYStore {
-    fileprivate let provider: CoincheckJPYProvider! = Injector.ct.resolve(CoincheckJPYProvider.self)
+struct TradeStoreImpl: TradeStore {
+    fileprivate let provider: TradeProvider! = Injector.ct.resolve(TradeProvider.self)
 
-    public func request(name: CoincheckJPYAPI, handler: @escaping (SingleEvent<[TradeEntity]>) -> Void) {
+    public func request(name: TradeAPI, handler: @escaping (SingleEvent<[TradeEntity]>) -> Void) {
         _ = provider.api.rx.request(name)
             .filterSuccessfulStatusCodes()
             .mapString()

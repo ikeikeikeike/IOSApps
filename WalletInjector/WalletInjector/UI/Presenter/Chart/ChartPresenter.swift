@@ -23,7 +23,7 @@ public class ChartPresenterImpl: ChartPresenter {
 
     weak public var view: ChartPresenterView!
 
-    let useCase: CoincheckJPYUseCase! = Injector.ct.resolve(CoincheckJPYUseCase.self)
+    let useCase: TradeUseCase! = Injector.ct.resolve(TradeUseCase.self)
 
     fileprivate var tradeModels: [TradeModel] = [] {
         didSet {

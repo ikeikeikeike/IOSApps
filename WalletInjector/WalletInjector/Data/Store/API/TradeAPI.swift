@@ -1,5 +1,5 @@
 //
-//  CoincheckJPYStore.swift
+//  TradeStore.swift
 //  WalletInjector
 //
 //  Created by Tatsuo Ikeda on 2018/02/18.
@@ -7,14 +7,14 @@
 //
 import Moya
 
-enum CoincheckJPYAPI: String {
+enum TradeAPI: String {
     case coincheckJPY = "CoincheckJPY"
     case bitflyerJPY  = "BitflyerJPY"
     case zaifJPY      = "ZaifJPY"
 }
 
 // MARK: - TargetType Protocol Implementation
-extension CoincheckJPYAPI: TargetType {
+extension TradeAPI: TargetType {
     var baseURL: URL {
         return URL(string: "https://api.bitcoincharts.com/v1")!
     }

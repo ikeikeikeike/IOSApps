@@ -1,5 +1,5 @@
 //
-//  CoincheckJPYUseCase.swift
+//  TradeUseCase.swift
 //  WalletInjector
 //
 //  Created by Tatsuo Ikeda on 2018/02/19.
@@ -10,16 +10,16 @@ import Moya
 import RxMoya
 import RxSwift
 
-public protocol CoincheckJPYUseCase {
+public protocol TradeUseCase {
     func request(name: String, handler: @escaping (SingleEvent<[TradeModel]>) -> Void)
 }
 
-public struct CoincheckJPYUseCaseImpl: CoincheckJPYUseCase {
+public struct TradeUseCaseImpl: TradeUseCase {
 
-    fileprivate let coincheckJPYRepo: CoincheckJPYRepo! = Injector.ct.resolve(CoincheckJPYRepo.self)
+    fileprivate let tradeRepo: TradeRepo! = Injector.ct.resolve(TradeRepo.self)
 
     public func request(name: String, handler: @escaping (SingleEvent<[TradeModel]>) -> Void) {
-        coincheckJPYRepo.request(name: name) { event in
+        tradeRepo.request(name: name) { event in
             switch event {
             case .success(let trades):
                 let models = TradeModelTranslator().translate(trades)

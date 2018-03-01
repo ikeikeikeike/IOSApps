@@ -1,5 +1,5 @@
 //
-//  CoincheckJPYTranslator.swift
+//  TradeTranslator.swift
 //  WalletInjector
 //
 //  Created by Tatsuo Ikeda on 2018/02/19.

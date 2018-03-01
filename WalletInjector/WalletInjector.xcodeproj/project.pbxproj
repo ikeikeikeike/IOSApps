@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		5F8C9470805118676551CC79 /* Pods_WalletInjectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A1671C51CCBA199B45DC00 /* Pods_WalletInjectorUITests.framework */; };
 		72A9729BC3DCEEDD87739979 /* Pods_WalletInjectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F10FC1CE0B49316F0E4853 /* Pods_WalletInjectorTests.framework */; };
-		88492620203A010300436860 /* CoincheckJPYRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849261F203A010300436860 /* CoincheckJPYRepo.swift */; };
+		88492620203A010300436860 /* TradeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849261F203A010300436860 /* TradeRepo.swift */; };
 		88492622203A046600436860 /* TradeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88492621203A046600436860 /* TradeEntity.swift */; };
-		88492624203A05BF00436860 /* CoincheckJPYUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88492623203A05BF00436860 /* CoincheckJPYUseCase.swift */; };
+		88492624203A05BF00436860 /* TradeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88492623203A05BF00436860 /* TradeUseCase.swift */; };
 		88492626203A072B00436860 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88492625203A072B00436860 /* Translator.swift */; };
 		88492628203A075600436860 /* TradeModelTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88492627203A075600436860 /* TradeModelTranslator.swift */; };
 		8849262A203A07DF00436860 /* TradeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88492629203A07DF00436860 /* TradeModel.swift */; };
@@ -44,12 +44,12 @@
 		886A983B203991420057F6EE /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A983A203991420057F6EE /* SwinjectStoryboard.framework */; };
 		886A983E2039A4390057F6EE /* SwinjectStoryboard+Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */; };
 		886A98402039A5690057F6EE /* Swinject+Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983F2039A5690057F6EE /* Swinject+Injector.swift */; };
-		88A12B83203B071D005E3360 /* CoincheckJPYProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B82203B071D005E3360 /* CoincheckJPYProvider.swift */; };
+		88A12B83203B071D005E3360 /* TradeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B82203B071D005E3360 /* TradeProvider.swift */; };
 		88A12B8F203C0B23005E3360 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B8E203C0B23005E3360 /* ChartPresenter.swift */; };
 		88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B91203C7A9C005E3360 /* CSVDecoder.swift */; };
 		88D7BB45204721EE00A85603 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D7BB44204721EE00A85603 /* XLPagerTabStrip.framework */; };
-		88DA4FDC2039ADBB002BF13E /* CoincheckJPYAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */; };
-		88DA4FDF2039B931002BF13E /* CoincheckJPYStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */; };
+		88DA4FDC2039ADBB002BF13E /* TradeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDB2039ADBB002BF13E /* TradeAPI.swift */; };
+		88DA4FDF2039B931002BF13E /* TradeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA4FDE2039B931002BF13E /* TradeStore.swift */; };
 		88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DAC27E20302B6F00874726 /* AppDelegate.swift */; };
 		88DAC28420302B6F00874726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28220302B6F00874726 /* Main.storyboard */; };
 		88DAC28620302B6F00874726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DAC28520302B6F00874726 /* Assets.xcassets */; };
@@ -87,9 +87,9 @@
 		38D7C07311D8B1AE23699741 /* Pods-WalletInjector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjector/Pods-WalletInjector.debug.xcconfig"; sourceTree = "<group>"; };
 		39485864D08DDAC57E6C4200 /* Pods-WalletInjectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorTests/Pods-WalletInjectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		5FB056B6E81AD29DDE824F3D /* Pods-WalletInjectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletInjectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalletInjectorUITests/Pods-WalletInjectorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8849261F203A010300436860 /* CoincheckJPYRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYRepo.swift; sourceTree = "<group>"; };
+		8849261F203A010300436860 /* TradeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRepo.swift; sourceTree = "<group>"; };
 		88492621203A046600436860 /* TradeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeEntity.swift; sourceTree = "<group>"; };
-		88492623203A05BF00436860 /* CoincheckJPYUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYUseCase.swift; sourceTree = "<group>"; };
+		88492623203A05BF00436860 /* TradeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeUseCase.swift; sourceTree = "<group>"; };
 		88492625203A072B00436860 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		88492627203A075600436860 /* TradeModelTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeModelTranslator.swift; sourceTree = "<group>"; };
 		88492629203A07DF00436860 /* TradeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeModel.swift; sourceTree = "<group>"; };
@@ -123,12 +123,12 @@
 		886A983A203991420057F6EE /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 		886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Injector.swift"; sourceTree = "<group>"; };
 		886A983F2039A5690057F6EE /* Swinject+Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swinject+Injector.swift"; sourceTree = "<group>"; };
-		88A12B82203B071D005E3360 /* CoincheckJPYProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYProvider.swift; sourceTree = "<group>"; };
+		88A12B82203B071D005E3360 /* TradeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeProvider.swift; sourceTree = "<group>"; };
 		88A12B8E203C0B23005E3360 /* ChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
 		88A12B91203C7A9C005E3360 /* CSVDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDecoder.swift; sourceTree = "<group>"; };
 		88D7BB44204721EE00A85603 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
-		88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYAPI.swift; sourceTree = "<group>"; };
-		88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYStore.swift; sourceTree = "<group>"; };
+		88DA4FDB2039ADBB002BF13E /* TradeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeAPI.swift; sourceTree = "<group>"; };
+		88DA4FDE2039B931002BF13E /* TradeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeStore.swift; sourceTree = "<group>"; };
 		88DAC27B20302B6F00874726 /* WalletInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DAC27E20302B6F00874726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DAC28320302B6F00874726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 		886A98342038562E0057F6EE /* Repo */ = {
 			isa = PBXGroup;
 			children = (
-				8849261F203A010300436860 /* CoincheckJPYRepo.swift */,
+				8849261F203A010300436860 /* TradeRepo.swift */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				88DA4FDD2039AE59002BF13E /* API */,
-				88DA4FDE2039B931002BF13E /* CoincheckJPYStore.swift */,
+				88DA4FDE2039B931002BF13E /* TradeStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -363,7 +363,7 @@
 		88DA4FD92039AD2F002BF13E /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				88492623203A05BF00436860 /* CoincheckJPYUseCase.swift */,
+				88492623203A05BF00436860 /* TradeUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -379,8 +379,8 @@
 		88DA4FDD2039AE59002BF13E /* API */ = {
 			isa = PBXGroup;
 			children = (
-				88DA4FDB2039ADBB002BF13E /* CoincheckJPYAPI.swift */,
-				88A12B82203B071D005E3360 /* CoincheckJPYProvider.swift */,
+				88DA4FDB2039ADBB002BF13E /* TradeAPI.swift */,
+				88A12B82203B071D005E3360 /* TradeProvider.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -795,14 +795,14 @@
 			files = (
 				88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */,
 				88492626203A072B00436860 /* Translator.swift in Sources */,
-				88A12B83203B071D005E3360 /* CoincheckJPYProvider.swift in Sources */,
+				88A12B83203B071D005E3360 /* TradeProvider.swift in Sources */,
 				88492628203A075600436860 /* TradeModelTranslator.swift in Sources */,
 				8857FF462047F29D00B8B975 /* RootSlideViewController.swift in Sources */,
 				88492622203A046600436860 /* TradeEntity.swift in Sources */,
-				88DA4FDF2039B931002BF13E /* CoincheckJPYStore.swift in Sources */,
+				88DA4FDF2039B931002BF13E /* TradeStore.swift in Sources */,
 				8857FF4E204874A100B8B975 /* ForthViewController.swift in Sources */,
 				8857FF58204874E300B8B975 /* EighthViewController.swift in Sources */,
-				88DA4FDC2039ADBB002BF13E /* CoincheckJPYAPI.swift in Sources */,
+				88DA4FDC2039ADBB002BF13E /* TradeAPI.swift in Sources */,
 				8857FF5A204874EB00B8B975 /* NinethViewController.swift in Sources */,
 				8857FF4C20486EB000B8B975 /* ZaifJPYViewController.swift in Sources */,
 				886A98402039A5690057F6EE /* Swinject+Injector.swift in Sources */,
@@ -811,14 +811,14 @@
 				88A12B8F203C0B23005E3360 /* ChartPresenter.swift in Sources */,
 				88DAC2B120302D5900874726 /* RootTabBarController.swift in Sources */,
 				88DAC2B320302D9D00874726 /* ChartViewController.swift in Sources */,
-				88492620203A010300436860 /* CoincheckJPYRepo.swift in Sources */,
+				88492620203A010300436860 /* TradeRepo.swift in Sources */,
 				88DAC2B520302DB600874726 /* SettingsViewController.swift in Sources */,
 				8857FF4820486E7100B8B975 /* CoincheckJPYViewController.swift in Sources */,
 				88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */,
 				8857FF5E20489B2D00B8B975 /* Strings.swift in Sources */,
 				88E4FED82046F74200E0DF58 /* ChartViewModel.swift in Sources */,
 				8857FF4A20486E9F00B8B975 /* BitflyerJPYViewController.swift in Sources */,
-				88492624203A05BF00436860 /* CoincheckJPYUseCase.swift in Sources */,
+				88492624203A05BF00436860 /* TradeUseCase.swift in Sources */,
 				8849262A203A07DF00436860 /* TradeModel.swift in Sources */,
 				8857FF56204874D800B8B975 /* SeventhViewController.swift in Sources */,
 				8857FF54204874D000B8B975 /* SixthViewController.swift in Sources */,
