@@ -11,6 +11,8 @@ import Charts
 
 class ChartViewController: UIViewController, ChartViewDelegate {
 
+    @IBOutlet var chartView: LineChartView!
+
     var presenter: ChartPresenter! {
         didSet { presenter.view = self }
     }
@@ -38,21 +40,20 @@ class ChartViewController: UIViewController, ChartViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBOutlet var chartView: LineChartView!
 }
 
 extension ChartViewController: ChartPresenterView {
 
     func reloadView(chartVM: ChartViewModel) {
-        let chartView: LineChartView = LineChartView()
+        chartVM.refresh(chartView: chartView)
+        self.chartVM = chartVM
+    }
+
+    func setupChartView() {
+        chartView = LineChartView()
         chartView.delegate = self
         chartView.frame = view.frame
 
-        chartVM.setChartView(chartView: chartView)
-        chartVM.refresh()
         view.addSubview(chartView)
-
-        self.chartVM = chartVM
     }
 }

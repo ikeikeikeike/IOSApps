@@ -10,24 +10,18 @@ import Foundation
 import Charts
 
 public protocol ChartViewModel {
-    func setChartView(chartView: LineChartView)
-    func refresh()
+    func refresh(chartView: LineChartView)
 }
 
 class ChartViewModelImpl: ChartViewModel {
 
-    @IBOutlet weak var chartView: LineChartView!
     fileprivate let tradeModels: [TradeModel]
 
     init(tradeModels: [TradeModel]) {
         self.tradeModels = tradeModels
     }
 
-    func setChartView(chartView: LineChartView) {
-        self.chartView = chartView
-    }
-
-    func refresh() {
+    func refresh(chartView: LineChartView) {
         // set data
 
         var lineChartEntry  = [ChartDataEntry]()

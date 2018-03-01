@@ -16,6 +16,7 @@ public protocol ChartPresenter {
 
 public protocol ChartPresenterView: class {
     func reloadView(chartVM: ChartViewModel)
+    func setupChartView()
 }
 
 public class ChartPresenterImpl: ChartPresenter {
@@ -31,7 +32,7 @@ public class ChartPresenterImpl: ChartPresenter {
     }
 
     public func setupUI() {
-
+        view.setupChartView()
     }
 
     public func refreshData() {

@@ -24,12 +24,163 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVW-rl-Pb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="166"/>
+            <point key="canvasLocation" x="476" y="261"/>
         </scene>
-        <!--Chart-->
+        <!--First View Controller-->
+        <scene sceneID="lge-A4-qnf">
+            <objects>
+                <viewController storyboardIdentifier="First" id="nf0-KS-TUt" customClass="FirstViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fbr-PT-2jV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="imz-uc-kiC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hwp-7d-Jzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="-1451"/>
+        </scene>
+        <!--RootSlide-->
+        <scene sceneID="J5f-cy-V6w">
+            <objects>
+                <viewController storyboardIdentifier="RootSlide" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IQL-5W-pzt" userLabel="RootSlide" customClass="RootSlideViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BH5-xc-rZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eEf-33-1L6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="sOB-hm-Gos"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9f-yw-4PJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="-1288"/>
+        </scene>
+        <!--Tenth View Controller-->
+        <scene sceneID="zaU-d6-k7u">
+            <objects>
+                <viewController storyboardIdentifier="Tenth" id="N9H-kG-4Ie" customClass="TenthViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Js1-Hb-mhp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tjB-ez-m7O"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XNQ-rm-SvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="-7470"/>
+        </scene>
+        <!--Nineth View Controller-->
+        <scene sceneID="v9E-op-pAO">
+            <objects>
+                <viewController storyboardIdentifier="Nineth" id="upK-Gt-PaZ" customClass="NinethViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gv7-mo-MG4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qqC-83-ehd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FuN-VV-AzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293" y="-6812"/>
+        </scene>
+        <!--Eighth View Controller-->
+        <scene sceneID="vo5-Di-xHw">
+            <objects>
+                <viewController storyboardIdentifier="Eighth" id="vWI-a5-XYj" customClass="EighthViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xKe-gf-lHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xp3-Yt-oeK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeD-4Z-1dG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="-6150"/>
+        </scene>
+        <!--Seventh View Controller-->
+        <scene sceneID="1Id-xc-slQ">
+            <objects>
+                <viewController storyboardIdentifier="Seventh" id="8lU-bh-dfm" customClass="SeventhViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HHH-qX-hdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zqc-fG-zPu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0h-0C-IMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="-5486"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="2NB-uC-DaC">
+            <objects>
+                <viewController storyboardIdentifier="Sixth" id="vev-Ii-ASB" customClass="SixthViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bf8-BB-Xb2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QQf-hF-WmA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgm-QR-Zp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1290" y="-4825"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="6QA-sP-din">
+            <objects>
+                <viewController storyboardIdentifier="Fifth" id="fKE-Ry-7xV" customClass="FifthViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lhs-CZ-V79">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QlY-z1-eAq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvE-oj-jLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1301" y="-4165"/>
+        </scene>
+        <!--Forth View Controller-->
+        <scene sceneID="ag2-ur-4r0">
+            <objects>
+                <viewController storyboardIdentifier="Forth" id="82m-2R-TJw" customClass="ForthViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="usb-Br-I7T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Y6T-xx-OZr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvb-Lw-8Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-3495"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="t8f-4N-l4v">
+            <objects>
+                <viewController storyboardIdentifier="Third" id="fLE-w2-te6" customClass="ThirdViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0LZ-xn-QIb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HHt-R1-YOW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5z0-0f-2r4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="-2818"/>
+        </scene>
+        <!--Chart View Controller-->
         <scene sceneID="rD4-YK-cgj">
             <objects>
-                <viewController id="ij4-Wa-dFm" customClass="ChartViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ij4-Wa-dFm" userLabel="Chart View Controller" customClass="ChartViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lyb-fG-YqB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rje-Dg-G3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710.5" y="-581.5"/>
+            <point key="canvasLocation" x="1134" y="-215"/>
         </scene>
         <!--Root Tab Bar Controller-->
         <scene sceneID="eVp-lR-OUJ">
@@ -54,11 +205,27 @@
                     <connections>
                         <segue destination="ij4-Wa-dFm" kind="relationship" relationship="viewControllers" id="gZS-aa-sJU"/>
                         <segue destination="PR5-ZK-ODg" kind="relationship" relationship="viewControllers" id="coS-Pd-LlD"/>
+                        <segue destination="IQL-5W-pzt" kind="relationship" relationship="viewControllers" id="Tkj-JZ-mpX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="es1-Zr-ZF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-311" y="-214"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="E5M-d1-Srf">
+            <objects>
+                <viewController storyboardIdentifier="Second" id="04r-P9-G8g" customClass="SecondViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uOW-DD-zTl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5aH-rT-T81"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKw-c8-Hsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="-2142"/>
         </scene>
     </scenes>
 </document>

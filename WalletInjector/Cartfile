@@ -10,3 +10,5 @@ github "danielgindi/Charts" ~> 3.0.5
 github "danielgindi/ChartsRealm" ~> 3.0.5
 
 github "yaslab/CSV.swift" ~> 2.1.0
+
+github "xmartlabs/XLPagerTabStrip" ~> 8.0
