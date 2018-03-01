@@ -11,14 +11,14 @@ import RxMoya
 import RxSwift
 
 protocol CoincheckJPYStore {
-    func request(handler: @escaping (SingleEvent<[TradeEntity]>) -> Void)
+    func request(name: CoincheckJPYAPI, handler: @escaping (SingleEvent<[TradeEntity]>) -> Void)
 }
 
 struct CoincheckJPYStoreImpl: CoincheckJPYStore {
     fileprivate let provider: CoincheckJPYProvider! = Injector.ct.resolve(CoincheckJPYProvider.self)
 
-    public func request(handler: @escaping (SingleEvent<[TradeEntity]>) -> Void) {
-        _ = provider.api.rx.request(.trades)
+    public func request(name: CoincheckJPYAPI, handler: @escaping (SingleEvent<[TradeEntity]>) -> Void) {
+        _ = provider.api.rx.request(name)
             .filterSuccessfulStatusCodes()
             .mapString()
             .map({ result in

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  BitflyerJPYViewController.swift
 //  WalletInjector
 //
 //  Created by Tatsuo Ikeda on 2018/03/02.
@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import Charts
 import XLPagerTabStrip
 
-class FirstViewController: UIViewController {
+class BitflyerJPYViewController: UIViewController {
+
+    let name: String = "BitflyerJPY"
+
+    @IBOutlet var chartView: LineChartView!
+
+    var presenter: ChartPresenter! {
+        didSet { presenter.view = self }
+    }
+
+    var chartVM: ChartViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        presenter.setupUI()
+        presenter.refreshData(name: name)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,8 +46,24 @@ class FirstViewController: UIViewController {
 
 }
 
-extension FirstViewController: IndicatorInfoProvider {
+extension BitflyerJPYViewController: ChartPresenterView, ChartViewDelegate {
+
+    func reloadView(chartVM: ChartViewModel) {
+        chartVM.refresh(chartView: chartView)
+        self.chartVM = chartVM
+    }
+
+    func setupChartView() {
+        chartView = LineChartView()
+        chartView.delegate = self
+        chartView.frame = view.frame
+
+        view.addSubview(chartView)
+    }
+}
+
+extension BitflyerJPYViewController: IndicatorInfoProvider {
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "First")
+        return IndicatorInfo(title: name)
     }
 }

@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="261"/>
         </scene>
-        <!--First View Controller-->
+        <!--CoincheckJPY View Controller-->
         <scene sceneID="lge-A4-qnf">
             <objects>
-                <viewController storyboardIdentifier="First" id="nf0-KS-TUt" customClass="FirstViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoincheckJPY" id="nf0-KS-TUt" customClass="CoincheckJPYViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fbr-PT-2jV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="1312" y="-3495"/>
         </scene>
-        <!--Third View Controller-->
+        <!--ZaifJPY View Controller-->
         <scene sceneID="t8f-4N-l4v">
             <objects>
-                <viewController storyboardIdentifier="Third" id="fLE-w2-te6" customClass="ThirdViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZaifJPY" id="fLE-w2-te6" customClass="ZaifJPYViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0LZ-xn-QIb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="-311" y="-214"/>
         </scene>
-        <!--Second View Controller-->
+        <!--BitflyerJPY View Controller-->
         <scene sceneID="E5M-d1-Srf">
             <objects>
-                <viewController storyboardIdentifier="Second" id="04r-P9-G8g" customClass="SecondViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BitflyerJPY" id="04r-P9-G8g" customClass="BitflyerJPYViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uOW-DD-zTl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

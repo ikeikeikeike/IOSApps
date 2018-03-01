@@ -25,9 +25,9 @@
 		885654D620382D0E00064C73 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654D520382D0E00064C73 /* ReactiveSwift.framework */; };
 		885654D820382D3800064C73 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885654D720382D3800064C73 /* Result.framework */; };
 		8857FF462047F29D00B8B975 /* RootSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF452047F29D00B8B975 /* RootSlideViewController.swift */; };
-		8857FF4820486E7100B8B975 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF4720486E7100B8B975 /* FirstViewController.swift */; };
-		8857FF4A20486E9F00B8B975 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF4920486E9F00B8B975 /* SecondViewController.swift */; };
-		8857FF4C20486EB000B8B975 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF4B20486EB000B8B975 /* ThirdViewController.swift */; };
+		8857FF4820486E7100B8B975 /* CoincheckJPYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF4720486E7100B8B975 /* CoincheckJPYViewController.swift */; };
+		8857FF4A20486E9F00B8B975 /* BitflyerJPYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF4920486E9F00B8B975 /* BitflyerJPYViewController.swift */; };
+		8857FF4C20486EB000B8B975 /* ZaifJPYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF4B20486EB000B8B975 /* ZaifJPYViewController.swift */; };
 		8857FF4E204874A100B8B975 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF4D204874A100B8B975 /* ForthViewController.swift */; };
 		8857FF52204874C900B8B975 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF51204874C900B8B975 /* FifthViewController.swift */; };
 		8857FF54204874D000B8B975 /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF53204874D000B8B975 /* SixthViewController.swift */; };
@@ -35,6 +35,7 @@
 		8857FF58204874E300B8B975 /* EighthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF57204874E300B8B975 /* EighthViewController.swift */; };
 		8857FF5A204874EB00B8B975 /* NinethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF59204874EB00B8B975 /* NinethViewController.swift */; };
 		8857FF5C204874F100B8B975 /* TenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF5B204874F100B8B975 /* TenthViewController.swift */; };
+		8857FF5E20489B2D00B8B975 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF5D20489B2D00B8B975 /* Strings.swift */; };
 		8863B95220335A1000449D3B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95120335A1000449D3B /* Charts.framework */; };
 		8863B95720335F6E00449D3B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95420335F6E00449D3B /* RealmSwift.framework */; };
 		8863B95820335F6E00449D3B /* ChartsRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95520335F6E00449D3B /* ChartsRealm.framework */; };
@@ -102,9 +103,9 @@
 		885654D520382D0E00064C73 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		885654D720382D3800064C73 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		8857FF452047F29D00B8B975 /* RootSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSlideViewController.swift; sourceTree = "<group>"; };
-		8857FF4720486E7100B8B975 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8857FF4920486E9F00B8B975 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		8857FF4B20486EB000B8B975 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		8857FF4720486E7100B8B975 /* CoincheckJPYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoincheckJPYViewController.swift; sourceTree = "<group>"; };
+		8857FF4920486E9F00B8B975 /* BitflyerJPYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitflyerJPYViewController.swift; sourceTree = "<group>"; };
+		8857FF4B20486EB000B8B975 /* ZaifJPYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaifJPYViewController.swift; sourceTree = "<group>"; };
 		8857FF4D204874A100B8B975 /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		8857FF51204874C900B8B975 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		8857FF53204874D000B8B975 /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		8857FF57204874E300B8B975 /* EighthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthViewController.swift; sourceTree = "<group>"; };
 		8857FF59204874EB00B8B975 /* NinethViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinethViewController.swift; sourceTree = "<group>"; };
 		8857FF5B204874F100B8B975 /* TenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthViewController.swift; sourceTree = "<group>"; };
+		8857FF5D20489B2D00B8B975 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		8863B95120335A1000449D3B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		8863B95420335F6E00449D3B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		8863B95520335F6E00449D3B /* ChartsRealm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartsRealm.framework; path = Carthage/Build/iOS/ChartsRealm.framework; sourceTree = "<group>"; };
@@ -292,9 +294,9 @@
 			isa = PBXGroup;
 			children = (
 				88DAC2B220302D9D00874726 /* ChartViewController.swift */,
-				8857FF4720486E7100B8B975 /* FirstViewController.swift */,
-				8857FF4920486E9F00B8B975 /* SecondViewController.swift */,
-				8857FF4B20486EB000B8B975 /* ThirdViewController.swift */,
+				8857FF4720486E7100B8B975 /* CoincheckJPYViewController.swift */,
+				8857FF4920486E9F00B8B975 /* BitflyerJPYViewController.swift */,
+				8857FF4B20486EB000B8B975 /* ZaifJPYViewController.swift */,
 				8857FF4D204874A100B8B975 /* ForthViewController.swift */,
 				8857FF51204874C900B8B975 /* FifthViewController.swift */,
 				8857FF53204874D000B8B975 /* SixthViewController.swift */,
@@ -335,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				88A12B91203C7A9C005E3360 /* CSVDecoder.swift */,
+				8857FF5D20489B2D00B8B975 /* Strings.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -801,7 +804,7 @@
 				8857FF58204874E300B8B975 /* EighthViewController.swift in Sources */,
 				88DA4FDC2039ADBB002BF13E /* CoincheckJPYAPI.swift in Sources */,
 				8857FF5A204874EB00B8B975 /* NinethViewController.swift in Sources */,
-				8857FF4C20486EB000B8B975 /* ThirdViewController.swift in Sources */,
+				8857FF4C20486EB000B8B975 /* ZaifJPYViewController.swift in Sources */,
 				886A98402039A5690057F6EE /* Swinject+Injector.swift in Sources */,
 				886A983E2039A4390057F6EE /* SwinjectStoryboard+Injector.swift in Sources */,
 				8857FF52204874C900B8B975 /* FifthViewController.swift in Sources */,
@@ -810,10 +813,11 @@
 				88DAC2B320302D9D00874726 /* ChartViewController.swift in Sources */,
 				88492620203A010300436860 /* CoincheckJPYRepo.swift in Sources */,
 				88DAC2B520302DB600874726 /* SettingsViewController.swift in Sources */,
-				8857FF4820486E7100B8B975 /* FirstViewController.swift in Sources */,
+				8857FF4820486E7100B8B975 /* CoincheckJPYViewController.swift in Sources */,
 				88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */,
+				8857FF5E20489B2D00B8B975 /* Strings.swift in Sources */,
 				88E4FED82046F74200E0DF58 /* ChartViewModel.swift in Sources */,
-				8857FF4A20486E9F00B8B975 /* SecondViewController.swift in Sources */,
+				8857FF4A20486E9F00B8B975 /* BitflyerJPYViewController.swift in Sources */,
 				88492624203A05BF00436860 /* CoincheckJPYUseCase.swift in Sources */,
 				8849262A203A07DF00436860 /* TradeModel.swift in Sources */,
 				8857FF56204874D800B8B975 /* SeventhViewController.swift in Sources */,

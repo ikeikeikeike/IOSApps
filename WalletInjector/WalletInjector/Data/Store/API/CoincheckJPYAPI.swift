@@ -7,8 +7,10 @@
 //
 import Moya
 
-enum CoincheckJPYAPI {
-    case trades
+enum CoincheckJPYAPI: String {
+    case coincheckJPY = "CoincheckJPY"
+    case bitflyerJPY  = "BitflyerJPY"
+    case zaifJPY      = "ZaifJPY"
 }
 
 // MARK: - TargetType Protocol Implementation
@@ -26,15 +28,24 @@ extension CoincheckJPYAPI: TargetType {
     }
 
     var sampleData: Data {
-        let path = Bundle.main.path(forResource: "coincheckJPY", ofType: "csv")!
+        let path = Bundle.main.path(forResource: symbol(), ofType: "csv")!
         return FileHandle(forReadingAtPath: path)!.readDataToEndOfFile()
     }
 
     var task: Task {
-        return .requestParameters(parameters: ["symbol": "coincheckJPY"], encoding: URLEncoding.default)
+        return .requestParameters(parameters: ["symbol": symbol()], encoding: URLEncoding.default)
     }
 
     var headers: [String : String]? {
         return nil
+    }
+
+    func symbol() -> String {
+        switch self {
+//        case .zaifJPY:
+//            return "zaifJPY"
+        default:
+            return rawValue.firstLowercase()
+        }
     }
 }

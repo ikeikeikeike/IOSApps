@@ -17,6 +17,13 @@ extension SwinjectStoryboard {
         ct.storyboardInitCompleted(ChartViewController.self) { r, vc in
             vc.presenter = r.resolve(ChartPresenter.self)
         }
+        ct.storyboardInitCompleted(CoincheckJPYViewController.self) { r, vc in
+            vc.presenter = r.resolve(ChartPresenter.self)
+        }
+        ct.storyboardInitCompleted(BitflyerJPYViewController.self) { r, vc in
+            vc.presenter = r.resolve(ChartPresenter.self)
+        }
+
     }
 
 }

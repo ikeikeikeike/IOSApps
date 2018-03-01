@@ -12,14 +12,19 @@ import XLPagerTabStrip
 class RootSlideViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
+        settings.style.buttonBarBackgroundColor = UIColor(red: 73/255, green: 72/255, blue: 62/255, alpha: 1)
+        settings.style.buttonBarItemBackgroundColor = UIColor(red: 73/255, green: 72/255, blue: 62/255, alpha: 1)
+        settings.style.buttonBarItemTitleColor = UIColor.white
+        settings.style.selectedBarBackgroundColor = UIColor(red: 254/255, green: 0, blue: 124/255, alpha: 1)
+
         super.viewDidLoad()
     }
 
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
 
-        let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "First")
-        let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Second")
-        let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Third")
+        let coincheckJPY = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CoincheckJPY")
+        let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BitflyerJPY")
+        let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ZaifJPY")
         let forthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Forth")
         let fifthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Fifth")
         let sixthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Sixth")
@@ -29,7 +34,7 @@ class RootSlideViewController: ButtonBarPagerTabStripViewController {
         let tenthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Tenth")
 
         return [
-            firstVC,
+            coincheckJPY,
             secondVC,
             thirdVC,
             forthVC,

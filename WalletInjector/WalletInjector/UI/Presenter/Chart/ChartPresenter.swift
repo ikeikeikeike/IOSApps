@@ -11,7 +11,7 @@ public protocol ChartPresenter {
     weak var view: ChartPresenterView! { get set }
 
     func setupUI()
-    func refreshData()
+    func refreshData(name: String)
 }
 
 public protocol ChartPresenterView: class {
@@ -35,8 +35,8 @@ public class ChartPresenterImpl: ChartPresenter {
         view.setupChartView()
     }
 
-    public func refreshData() {
-        useCase.request { result in
+    public func refreshData(name: String) {
+        useCase.request(name: name) { result in
             switch result {
             case .success(let trades):
                 self.tradeModels = trades

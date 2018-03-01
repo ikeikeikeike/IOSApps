@@ -11,15 +11,15 @@ import RxMoya
 import RxSwift
 
 public protocol CoincheckJPYUseCase {
-    func request(handler: @escaping (SingleEvent<[TradeModel]>) -> Void)
+    func request(name: String, handler: @escaping (SingleEvent<[TradeModel]>) -> Void)
 }
 
 public struct CoincheckJPYUseCaseImpl: CoincheckJPYUseCase {
 
     fileprivate let coincheckJPYRepo: CoincheckJPYRepo! = Injector.ct.resolve(CoincheckJPYRepo.self)
 
-    public func request(handler: @escaping (SingleEvent<[TradeModel]>) -> Void) {
-        coincheckJPYRepo.request { event in
+    public func request(name: String, handler: @escaping (SingleEvent<[TradeModel]>) -> Void) {
+        coincheckJPYRepo.request(name: name) { event in
             switch event {
             case .success(let trades):
                 let models = TradeModelTranslator().translate(trades)
