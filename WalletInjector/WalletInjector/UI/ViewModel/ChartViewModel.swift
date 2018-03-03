@@ -22,23 +22,41 @@ class ChartViewModelImpl: ChartViewModel {
     }
 
     func refresh(chartView: LineChartView) {
-        // set data
+        var entries = [ChartDataEntry]()
 
-        var lineChartEntry  = [ChartDataEntry]()
-        for i in 1...20 {
-            let chartData = ChartDataEntry(x: Double(i), y: Double(arc4random_uniform(UInt32(i))*2))
-            lineChartEntry.append(chartData)
+        for (index, model) in tradeModels.enumerated() {
+            guard let unix = model.unixtime else {
+                continue
+            }
+            guard let price = model.price else {
+                continue
+            }
+//            guard let _ = model.amount else { continue }
+
+            print((index, price))
+
+            if index == 100 {
+                break
+            }
+
+            let chartData = ChartDataEntry(x: Double(index), y: price)
+            entries.append(chartData)
         }
 
-        // Colors of the gradient
+//        for i in 1...20 {
+//            let unko = arc4random_uniform(UInt32(i))*2
+//            print(unko)
+//            let chartData = ChartDataEntry(x: Double(i), y: Double(unko))
+//            entries.append(chartData)
+//        }
+
         let gradientColors = [UIColor.blue.cgColor, UIColor.clear.cgColor] as CFArray
-        // Positioning of the gradient
         let colorLocations:[CGFloat] = [1.0, 0.0]
         let gradient = CGGradient.init(colorsSpace: CGColorSpaceCreateDeviceRGB(),
                                        colors: gradientColors,
                                        locations: colorLocations)
 
-        let line = LineChartDataSet(values: lineChartEntry, label: "test")
+        let line = LineChartDataSet(values: entries, label: "TradeHistory")
         // e.colors = [NSUIColor.black]
         line.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0)
         line.drawFilledEnabled = true
@@ -48,6 +66,6 @@ class ChartViewModelImpl: ChartViewModel {
         data.addDataSet(line)
 
         chartView.data = data
-        chartView.chartDescription?.text = "Hello!"
+        chartView.chartDescription?.text = "TradeHistory!"
     }
 }

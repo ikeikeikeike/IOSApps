@@ -13,6 +13,7 @@ import XLPagerTabStrip
 class ZaifJPYViewController: UIViewController {
 
     let name: String = "ZaifJPY"
+
     @IBOutlet var chartView: LineChartView!
 
     var presenter: ChartPresenter! {

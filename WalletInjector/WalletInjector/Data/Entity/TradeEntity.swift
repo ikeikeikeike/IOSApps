@@ -16,4 +16,8 @@ public struct TradeEntity: Codable {
         case price
         case amount
     }
+
+    func isValid() -> Bool {
+        return unixtime != nil && price != nil && amount != nil
+    }
 }
