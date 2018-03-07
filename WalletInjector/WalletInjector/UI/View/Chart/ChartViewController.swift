@@ -13,7 +13,8 @@ class ChartViewController: UIViewController {
 
     let name: String = "CoincheckJPY"
 
-    @IBOutlet var chartView: LineChartView!
+    var chartView: LineChartView!
+    @IBOutlet weak var chartArea: UIView!
 
     var presenter: ChartPresenter! {
         didSet { presenter.view = self }
@@ -54,8 +55,8 @@ extension ChartViewController: ChartPresenterView, ChartViewDelegate {
     func setupChartView() {
         chartView = LineChartView()
         chartView.delegate = self
-        chartView.frame = view.frame
+//        chartView.frame = chartArea.frame
 
-        view.addSubview(chartView)
+//        chartArea.addSubview(chartView)
     }
 }

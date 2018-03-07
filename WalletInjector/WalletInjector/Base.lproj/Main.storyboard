@@ -182,16 +182,59 @@
             <objects>
                 <viewController id="ij4-Wa-dFm" userLabel="Chart View Controller" customClass="ChartViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lyb-fG-YqB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBZ-28-W7w">
+                                <rect key="frame" x="0.0" y="20" width="375" height="831"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sxh-aq-WWb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="831"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx2-eO-T35">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="193"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeW-8Y-hht">
+                                                <rect key="frame" x="0.0" y="213" width="375" height="192.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVF-Yz-yq4">
+                                                <rect key="frame" x="0.0" y="425.5" width="375" height="193"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-xN-O4t">
+                                                <rect key="frame" x="0.0" y="638.5" width="375" height="192.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sxh-aq-WWb" firstAttribute="top" secondItem="cBZ-28-W7w" secondAttribute="top" id="Lgb-NH-vjp"/>
+                                    <constraint firstItem="sxh-aq-WWb" firstAttribute="width" secondItem="cBZ-28-W7w" secondAttribute="width" id="NUe-G0-HhJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="sxh-aq-WWb" secondAttribute="bottom" id="UAI-Go-XTH"/>
+                                    <constraint firstItem="sxh-aq-WWb" firstAttribute="leading" secondItem="cBZ-28-W7w" secondAttribute="leading" id="ZFE-H2-ocY"/>
+                                    <constraint firstAttribute="trailing" secondItem="sxh-aq-WWb" secondAttribute="trailing" id="dh8-ZB-BFa"/>
+                                    <constraint firstItem="sxh-aq-WWb" firstAttribute="height" secondItem="cBZ-28-W7w" secondAttribute="height" id="xYh-HZ-JKH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cBZ-28-W7w" firstAttribute="top" secondItem="xSQ-Ar-lrA" secondAttribute="top" id="Bl8-ju-zkt"/>
+                            <constraint firstItem="xSQ-Ar-lrA" firstAttribute="bottom" secondItem="cBZ-28-W7w" secondAttribute="bottom" id="QPe-Ec-Y6E"/>
+                            <constraint firstItem="xSQ-Ar-lrA" firstAttribute="trailing" secondItem="cBZ-28-W7w" secondAttribute="trailing" id="Yyb-eJ-25X"/>
+                            <constraint firstItem="cBZ-28-W7w" firstAttribute="leading" secondItem="xSQ-Ar-lrA" secondAttribute="leading" id="zNv-gJ-GWG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xSQ-Ar-lrA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chart" id="Gj1-3q-3vt"/>
+                    <size key="freeformSize" width="375" height="900"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rje-Dg-G3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134" y="-215"/>
+            <point key="canvasLocation" x="1133.5999999999999" y="-215.8920539730135"/>
         </scene>
         <!--Root Tab Bar Controller-->
         <scene sceneID="eVp-lR-OUJ">

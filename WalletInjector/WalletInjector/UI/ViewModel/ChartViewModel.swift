@@ -34,7 +34,6 @@ class ChartViewModelImpl: ChartViewModel {
 //            guard let _ = model.amount else { continue }
 
             print((index, price))
-
             if index == 100 {
                 break
             }
