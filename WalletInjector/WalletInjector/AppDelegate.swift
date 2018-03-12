@@ -43,36 +43,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-
-extension AppDelegate {
-    func setupRouting() {
-        Navigator.scheme = "compass"
-        Navigator.routes = ["chart", "settings", "login", "logout"]
-        Navigator.handle = { [weak self] location in
-            guard let `self` = self else {
-                return
-            }
-
-            let arguments = location.arguments
-            print(arguments)
-//            let rootController = self.window?.rootViewController as? UITabBarController
-//            RootTabBarController
-
-            switch location.path {
-            case "chart":
-                let vc = Storyboard.main.instantiate(ChartViewController.self)
-                rootController?.pushViewController(vc, animated: true)
-            case "settings":
-                let vc = Storyboard.main.instantiate(SettingsViewController.self)
-                rootController?.pushViewController(vc, animated: true)
-            case "login":
-                let vc = Storyboard.main.instantiate(LoginViewController.self)
-                rootController?.pushViewController(vc, animated: true)
-            case "logout":
-                break
-            default:
-                break
-            }
-        }
-    }
-}
