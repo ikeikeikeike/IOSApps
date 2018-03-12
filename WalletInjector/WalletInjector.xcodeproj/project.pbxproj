@@ -44,6 +44,10 @@
 		886A983B203991420057F6EE /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A983A203991420057F6EE /* SwinjectStoryboard.framework */; };
 		886A983E2039A4390057F6EE /* SwinjectStoryboard+Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */; };
 		886A98402039A5690057F6EE /* Swinject+Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A983F2039A5690057F6EE /* Swinject+Injector.swift */; };
+		8877338B2056D07900FB2F58 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877338A2056D07900FB2F58 /* LoginViewController.swift */; };
+		8877338D2056E7A600FB2F58 /* Compass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8877338C2056E7A600FB2F58 /* Compass.framework */; };
+		887733932056F1A300FB2F58 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887733922056F1A300FB2F58 /* Storyboard.swift */; };
+		887733952056F42D00FB2F58 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887733942056F42D00FB2F58 /* UI.swift */; };
 		88A12B83203B071D005E3360 /* TradeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B82203B071D005E3360 /* TradeProvider.swift */; };
 		88A12B8F203C0B23005E3360 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B8E203C0B23005E3360 /* ChartPresenter.swift */; };
 		88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B91203C7A9C005E3360 /* CSVDecoder.swift */; };
@@ -123,6 +127,10 @@
 		886A983A203991420057F6EE /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 		886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Injector.swift"; sourceTree = "<group>"; };
 		886A983F2039A5690057F6EE /* Swinject+Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swinject+Injector.swift"; sourceTree = "<group>"; };
+		8877338A2056D07900FB2F58 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8877338C2056E7A600FB2F58 /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
+		887733922056F1A300FB2F58 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		887733942056F42D00FB2F58 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		88A12B82203B071D005E3360 /* TradeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeProvider.swift; sourceTree = "<group>"; };
 		88A12B8E203C0B23005E3360 /* ChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
 		88A12B91203C7A9C005E3360 /* CSVDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDecoder.swift; sourceTree = "<group>"; };
@@ -157,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8877338D2056E7A600FB2F58 /* Compass.framework in Frameworks */,
 				88D7BB45204721EE00A85603 /* XLPagerTabStrip.framework in Frameworks */,
 				88E7231F203C8A820085AD2F /* CSV.framework in Frameworks */,
 				886A983B203991420057F6EE /* SwinjectStoryboard.framework in Frameworks */,
@@ -225,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				88A12B8A203C0A8F005E3360 /* Root */,
+				887733892056D05100FB2F58 /* Login */,
 				88A12B88203C0A7C005E3360 /* Chart */,
 				88A12B89203C0A85005E3360 /* Settings */,
 			);
@@ -270,8 +280,19 @@
 		886A983C2039A3900057F6EE /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				886A983F2039A5690057F6EE /* Swinject+Injector.swift */,
+				886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */,
+				887733922056F1A300FB2F58 /* Storyboard.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		887733892056D05100FB2F58 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8877338A2056D07900FB2F58 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		88A12B84203B2CE6005E3360 /* ViewModel */ = {
@@ -338,6 +359,7 @@
 			children = (
 				88A12B91203C7A9C005E3360 /* CSVDecoder.swift */,
 				8857FF5D20489B2D00B8B975 /* Strings.swift */,
+				887733942056F42D00FB2F58 /* UI.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -414,8 +436,6 @@
 				886A9833203856100057F6EE /* Domain */,
 				886A9830203855A10057F6EE /* UI */,
 				88A12B90203C7A8A005E3360 /* Utils */,
-				886A983F2039A5690057F6EE /* Swinject+Injector.swift */,
-				886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */,
 				88DAC27E20302B6F00874726 /* AppDelegate.swift */,
 				88DAC28220302B6F00874726 /* Main.storyboard */,
 				88DAC28520302B6F00874726 /* Assets.xcassets */,
@@ -446,6 +466,7 @@
 		FEFC684FF0D19EC97317EEE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8877338C2056E7A600FB2F58 /* Compass.framework */,
 				88D7BB44204721EE00A85603 /* XLPagerTabStrip.framework */,
 				88E7231E203C8A820085AD2F /* CSV.framework */,
 				886A983A203991420057F6EE /* SwinjectStoryboard.framework */,
@@ -745,6 +766,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CSV.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/XLPagerTabStrip.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Compass.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -794,12 +816,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DAC27F20302B6F00874726 /* AppDelegate.swift in Sources */,
+				887733932056F1A300FB2F58 /* Storyboard.swift in Sources */,
 				88492626203A072B00436860 /* Translator.swift in Sources */,
 				88A12B83203B071D005E3360 /* TradeProvider.swift in Sources */,
 				88492628203A075600436860 /* TradeModelTranslator.swift in Sources */,
 				8857FF462047F29D00B8B975 /* RootSlideViewController.swift in Sources */,
 				88492622203A046600436860 /* TradeEntity.swift in Sources */,
 				88DA4FDF2039B931002BF13E /* TradeStore.swift in Sources */,
+				887733952056F42D00FB2F58 /* UI.swift in Sources */,
+				8877338B2056D07900FB2F58 /* LoginViewController.swift in Sources */,
 				8857FF4E204874A100B8B975 /* ForthViewController.swift in Sources */,
 				8857FF58204874E300B8B975 /* EighthViewController.swift in Sources */,
 				88DA4FDC2039ADBB002BF13E /* TradeAPI.swift in Sources */,
