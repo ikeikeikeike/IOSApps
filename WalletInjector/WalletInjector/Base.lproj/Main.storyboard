@@ -44,7 +44,7 @@
         <!--RootSlide-->
         <scene sceneID="J5f-cy-V6w">
             <objects>
-                <viewController storyboardIdentifier="RootSlide" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IQL-5W-pzt" userLabel="RootSlide" customClass="RootSlideViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RootSlideViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IQL-5W-pzt" userLabel="RootSlide" customClass="RootSlideViewController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BH5-xc-rZ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,7 +239,7 @@
         <!--Root Tab Bar Controller-->
         <scene sceneID="eVp-lR-OUJ">
             <objects>
-                <tabBarController id="pgP-ub-Rz2" customClass="RootTabBarController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pgP-ub-Rz2" customClass="RootTabBarController" customModule="WalletInjector" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Om7-na-sUk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -307,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2N-1E-sRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1500" y="-219"/>
+            <point key="canvasLocation" x="-1714" y="-219"/>
         </scene>
         <!--BitflyerJPY View Controller-->
         <scene sceneID="E5M-d1-Srf">

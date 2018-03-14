@@ -34,24 +34,26 @@ extension AppDelegate {
             guard let `self` = self else {
                 return
             }
-            
+
             let arguments = location.arguments
             print(arguments)
-            //            let rootController = self.window?.rootViewController as? UITabBarController
+            print(location.path)
+            print("------")
+//            let rootController = self.window?.rootViewController as? RootTabBarController
             //            RootTabBarController
-            
+
             switch location.path {
             case "chart":
                 let vc = Storyboard.main.instantiate(ChartViewController.self)
-                rootController?.pushViewController(vc, animated: true)
+                self.window?.rootViewController?.present(vc, animated: true, completion: nil)
             case "settings":
-                let vc = Storyboard.main.instantiate(SettingsViewController.self)
-                rootController?.pushViewController(vc, animated: true)
+                let tc = Storyboard.main.instantiate(RootTabBarController.self)
+                self.window?.rootViewController?.show(tc, sender: nil)
             case "login":
                 let vc = Storyboard.main.instantiate(LoginViewController.self)
-                rootController?.pushViewController(vc, animated: true)
+                self.window?.rootViewController?.present(vc, animated: true, completion: nil)
             case "logout":
-                break
+                print("logout")
             default:
                 break
             }

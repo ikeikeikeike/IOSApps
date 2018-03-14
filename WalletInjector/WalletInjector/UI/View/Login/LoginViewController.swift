@@ -36,7 +36,8 @@ class LoginViewController: UIViewController {
     */
 
     @IBAction func loginAction(_ sender: Any) {
-        try? Navigator.navigate(urn: "chart")
+//        try? Navigator.navigate(urn: "chart")
+        try? Navigator.navigate(urn: "settings")
     }
 
 }
