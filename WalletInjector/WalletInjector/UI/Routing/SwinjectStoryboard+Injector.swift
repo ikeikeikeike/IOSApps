@@ -27,6 +27,10 @@ extension SwinjectStoryboard {
             vc.presenter = r.resolve(ChartPresenter.self)
         }
 
+        ct.register(LoginPresenter.self) { _ in LoginPresenterImpl() }
+        ct.storyboardInitCompleted(LoginViewController.self) { r, vc in
+            vc.presenter = r.resolve(LoginPresenter.self)
+        }
     }
 
 }

@@ -20,7 +20,7 @@ public class LoginPresenterImpl: LoginPresenter {
 
     weak public var view: LoginPresenterView!
 
-//    let useCase: AccountUseCase! = Injector.ct.resolve(AccountUseCase.self)
+    let useCase: WalletUseCase! = Injector.ct.resolve(WalletUseCase.self)
 
 //    fileprivate var tradeModels: [TradeModel] = [] {
 //        didSet {

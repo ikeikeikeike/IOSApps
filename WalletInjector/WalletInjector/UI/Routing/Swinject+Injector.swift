@@ -15,5 +15,10 @@ final class Injector {
         ct.register(TradeStore.self) { _ in TradeStoreImpl() }
         ct.register(TradeRepo.self) { _ in TradeRepoImpl() }
         ct.register(TradeUseCase.self) { _ in TradeUseCaseImpl() }
+
+        ct.register(WalletProvider.self) { _ in WalletProviderImpl() }
+        ct.register(WalletStore.self) { _ in WalletStoreImpl() }
+        ct.register(WalletRepo.self) { _ in WalletRepoImpl() }
+        ct.register(WalletUseCase.self) { _ in WalletUseCaseImpl() }
     }
 }
