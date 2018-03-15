@@ -17,7 +17,7 @@ enum WalletAPI {
 // MARK: - TargetType Protocol Implementation
 extension WalletAPI: TargetType {
     var baseURL: URL {
-        return URL(string: "http://localhost:9009")!
+        return URL(string: "http://localhost:9000")!
     }
 
     var path: String {
@@ -51,7 +51,7 @@ extension WalletAPI: TargetType {
            break
         }
 
-        return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        return .requestParameters(parameters: params, encoding: JSONEncoding.default)
     }
 
     var headers: [String : String]? {

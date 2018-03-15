@@ -7,9 +7,11 @@
 //
 
 public struct SignioEntity: Codable {
-    let token: String?
+    let status: String
+    let data: [String: String]
 
     private enum CodingKeys: String, CodingKey {
-        case token = "token"
+        case status
+        case data
     }
 }

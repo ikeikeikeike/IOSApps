@@ -26,7 +26,7 @@ struct WalletStoreImpl: WalletStore {
     }
 
     public func signup(email: String, password: String, handler: @escaping (SingleEvent<SignioEntity>) -> Void) {
-        _ = provider.api.rx.request(.signin(email: email, password: password))
+        _ = provider.api.rx.request(.signup(email: email, password: password))
             .filterSuccessfulStatusCodes()
             .map(SignioEntity.self)
             .subscribe(handler)

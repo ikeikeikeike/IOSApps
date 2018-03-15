@@ -38,16 +38,28 @@ class LoginViewController: UIViewController {
     */
 
     @IBAction func loginAction(_ sender: Any) {
-        print(emailField.text)
-        print(passwordField.text)
+        guard let email = emailField.text, !email.isEmpty else {
+            return errorAlert(message: "Blank Email")
+        }
+        guard let password = passwordField.text, !password.isEmpty else {
+            return errorAlert(message: "Blank Password")
+        }
 
-        errorAlert()
+        presenter.signin(email: email, password: password) { result in
+            switch result {
+            case .success(let signio):
+                print(signio.token)
+                try? Navigator.navigate(urn: "settings")
 
-//        try? Navigator.navigate(urn: "settings")
+            case .error(let _):
+                self.errorAlert()
+            }
+        }
+
     }
 
-    private func errorAlert() {
-        let alert = UIAlertController(title: nil, message: "Auth Failed", preferredStyle: .alert)
+    private func errorAlert(message: String = "Auth Failed") {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 
         present(alert, animated: true, completion: nil)

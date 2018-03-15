@@ -8,7 +8,7 @@
 
 internal struct SignioModelTranslator: Translator {
     internal func translate(_ entity: SignioEntity) -> SignioModel {
-        let token: String = entity.token ?? ""
+        let token: String = entity.data["token"] ?? ""
         return SignioModel(token: token)
     }
 

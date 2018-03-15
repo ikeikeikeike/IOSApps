@@ -5,27 +5,25 @@
 //  Created by Tatsuo Ikeda on 2018/03/15.
 //  Copyright © 2018 Tatsuo Ikeda. All rights reserved.
 //
+import Moya
+import RxMoya
+import RxSwift
 
 public protocol LoginPresenter {
-
-    weak var view: LoginPresenterView! { get set }
-
-}
-
-public protocol LoginPresenterView: class {
-
+    func signin(email: String, password: String, handler: @escaping (SingleEvent<SignioModel>) -> Void)
+    func signup(email: String, password: String, handler: @escaping (SingleEvent<SignioModel>) -> Void)
 }
 
 public class LoginPresenterImpl: LoginPresenter {
 
-    weak public var view: LoginPresenterView!
-
     let useCase: WalletUseCase! = Injector.ct.resolve(WalletUseCase.self)
 
-//    fileprivate var tradeModels: [TradeModel] = [] {
-//        didSet {
-//            reloadView(tradeModels: tradeModels)
-//        }
-//    }
+    public func signin(email: String, password: String, handler: @escaping (SingleEvent<SignioModel>) -> Void) {
+        useCase.signin(email: email, password: password, handler: handler)
+    }
+
+    public func signup(email: String, password: String, handler: @escaping (SingleEvent<SignioModel>) -> Void) {
+        useCase.signup(email: email, password: password, handler: handler)
+    }
 
 }
