@@ -48,3 +48,17 @@ extension TradeAPI: TargetType {
         }
     }
 }
+
+protocol TradeProvider {
+    var api: MoyaProvider<TradeAPI> { get }
+}
+
+struct TradeProviderImpl: TradeProvider {
+    var api: MoyaProvider<TradeAPI> = {
+        let stubClosure = { (target: TradeAPI) -> StubBehavior in .never }
+        let networkLoggerPlugin = NetworkLoggerPlugin(cURL: true)
+        let plugins = [networkLoggerPlugin]
+
+        return MoyaProvider<TradeAPI>(stubClosure: stubClosure, plugins: plugins)
+    }()
+}

@@ -44,14 +44,14 @@ extension AppDelegate {
 
             switch location.path {
             case "chart":
-                let vc = Storyboard.main.instantiate(ChartViewController.self)
-                self.window?.rootViewController?.present(vc, animated: true, completion: nil)
+                let c = Storyboard.main.instantiate(RootTabBarController.self)
+                self.window?.rootViewController?.present(c, animated: true, completion: nil)
             case "settings":
-                let tc = Storyboard.main.instantiate(RootTabBarController.self)
-                self.window?.rootViewController?.show(tc, sender: nil)
+                let c = Storyboard.main.instantiate(RootTabBarController.self)
+                self.window?.rootViewController?.show(c, sender: nil)
             case "login":
-                let vc = Storyboard.main.instantiate(LoginViewController.self)
-                self.window?.rootViewController?.present(vc, animated: true, completion: nil)
+                let c = Storyboard.main.instantiate(LoginViewController.self)
+                self.window?.rootViewController?.present(c, animated: true, completion: nil)
             case "logout":
                 print("logout")
             default:

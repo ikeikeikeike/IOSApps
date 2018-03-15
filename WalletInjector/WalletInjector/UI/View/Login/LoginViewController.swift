@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
 
+//    var presenter: LoginPresenter!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,8 +38,19 @@ class LoginViewController: UIViewController {
     */
 
     @IBAction func loginAction(_ sender: Any) {
-//        try? Navigator.navigate(urn: "chart")
-        try? Navigator.navigate(urn: "settings")
+        print(emailField.text)
+        print(passwordField.text)
+
+        errorAlert()
+
+//        try? Navigator.navigate(urn: "settings")
+    }
+
+    private func errorAlert() {
+        let alert = UIAlertController(title: nil, message: "Auth Failed", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+        present(alert, animated: true, completion: nil)
     }
 
 }
