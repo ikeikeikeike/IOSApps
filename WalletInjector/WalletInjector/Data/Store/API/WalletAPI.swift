@@ -82,12 +82,8 @@ protocol WalletProvider {
 
 struct WalletProviderImpl: WalletProvider {
     var api: MoyaProvider<WalletAPI> = {
-        let token: () -> String = {
-            // TODO: keychain or something
-            let t =
-            "eyJhbGciOiJIUzI1NiIsInppcCI6IkRFRiJ9.eNqqVspMUbIyMqoFAAAA__8.dRapc9EPiZclZy6vHnNwCuhG1zYTJFXW4h307zydOZ0"
-            return t
-        }
+        let key = TokenKeyImpl() // MARK -- Unuse DI
+        let token: () -> String = { key.get() ?? "" }
 
         let auth   = AccessTokenPlugin(tokenClosure: token())
         let logger = NetworkLoggerPlugin(cURL: true)

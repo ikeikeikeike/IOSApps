@@ -54,6 +54,7 @@
 		88BD746E205AEC8800132C84 /* WalletModelTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD746D205AEC8800132C84 /* WalletModelTranslator.swift */; };
 		88BD7470205AEE1700132C84 /* WalletRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD746F205AEE1700132C84 /* WalletRepo.swift */; };
 		88BD7476205D7DC900132C84 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BD7475205D7DC900132C84 /* KeychainAccess.framework */; };
+		88BD7479205D846800132C84 /* TokenKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD7478205D846800132C84 /* TokenKey.swift */; };
 		88D7BB45204721EE00A85603 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D7BB44204721EE00A85603 /* XLPagerTabStrip.framework */; };
 		88D91D6D205AB94B00F30254 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D91D6C205AB94B00F30254 /* LoginPresenter.swift */; };
 		88D91D6F205ABAC100F30254 /* WalletUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D91D6E205ABAC100F30254 /* WalletUseCase.swift */; };
@@ -145,6 +146,7 @@
 		88BD746D205AEC8800132C84 /* WalletModelTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModelTranslator.swift; sourceTree = "<group>"; };
 		88BD746F205AEE1700132C84 /* WalletRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepo.swift; sourceTree = "<group>"; };
 		88BD7475205D7DC900132C84 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		88BD7478205D846800132C84 /* TokenKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenKey.swift; sourceTree = "<group>"; };
 		88D7BB44204721EE00A85603 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
 		88D91D6C205AB94B00F30254 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		88D91D6E205ABAC100F30254 /* WalletUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletUseCase.swift; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 		88A12B90203C7A8A005E3360 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				88BD7477205D843100132C84 /* Key */,
 				88A12B91203C7A9C005E3360 /* CSVDecoder.swift */,
 				8857FF5D20489B2D00B8B975 /* Strings.swift */,
 				887733942056F42D00FB2F58 /* UI.swift */,
@@ -397,6 +400,14 @@
 			children = (
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		88BD7477205D843100132C84 /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				88BD7478205D846800132C84 /* TokenKey.swift */,
+			);
+			path = Key;
 			sourceTree = "<group>";
 		};
 		88DA4FD72039ACF8002BF13E /* Store */ = {
@@ -876,6 +887,7 @@
 				8857FF4C20486EB000B8B975 /* ZaifJPYViewController.swift in Sources */,
 				886A98402039A5690057F6EE /* Swinject+Injector.swift in Sources */,
 				88BD7470205AEE1700132C84 /* WalletRepo.swift in Sources */,
+				88BD7479205D846800132C84 /* TokenKey.swift in Sources */,
 				886A983E2039A4390057F6EE /* SwinjectStoryboard+Injector.swift in Sources */,
 				8857FF52204874C900B8B975 /* FifthViewController.swift in Sources */,
 				88D91D73205ADED800F30254 /* WalletStore.swift in Sources */,

@@ -29,6 +29,7 @@ extension SwinjectStoryboard {
 
         ct.register(LoginPresenter.self) { _ in LoginPresenterImpl() }
         ct.storyboardInitCompleted(LoginViewController.self) { r, vc in
+//            vc.tokenKey = r.resolve(TokenKey.self)
             vc.presenter = r.resolve(LoginPresenter.self)
         }
     }

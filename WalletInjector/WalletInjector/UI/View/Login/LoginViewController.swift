@@ -15,11 +15,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
 
     var presenter: LoginPresenter!
+    var tokenKey: TokenKey = TokenKeyImpl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if tokenKey.exists() {
+            try? Navigator.navigate(urn: "settings") // TODO: cloud not transfer to another vc
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,9 +51,8 @@ class LoginViewController: UIViewController {
         presenter.signin(email: email, password: password) { result in
             switch result {
             case .success(let signio):
-                print(signio.token)
+                _ = self.tokenKey.set(token: signio.token)  // Set token to keychain
                 try? Navigator.navigate(urn: "settings")
-
             case .error:
                 self.errorAlert()
             }
