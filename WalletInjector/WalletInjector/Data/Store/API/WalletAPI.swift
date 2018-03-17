@@ -15,7 +15,8 @@ enum WalletAPI {
 }
 
 // MARK: - TargetType Protocol Implementation
-extension WalletAPI: TargetType {
+extension WalletAPI: TargetType, AccessTokenAuthorizable {
+
     var baseURL: URL {
         return URL(string: "http://localhost:9000")!
     }
@@ -37,6 +38,15 @@ extension WalletAPI: TargetType {
             return .post
         default:
             return .get
+        }
+    }
+
+    var authorizationType: AuthorizationType {
+        switch self {
+        case .signup, .signin:
+            return .none
+        default:
+            return .bearer
         }
     }
 
@@ -72,10 +82,17 @@ protocol WalletProvider {
 
 struct WalletProviderImpl: WalletProvider {
     var api: MoyaProvider<WalletAPI> = {
-        let stubClosure = { (target: WalletAPI) -> StubBehavior in .never }
-        let networkLoggerPlugin = NetworkLoggerPlugin(cURL: true)
-        let plugins = [networkLoggerPlugin]
+        let token: () -> String = {
+            // TODO: keychain or something
+            let t =
+            "eyJhbGciOiJIUzI1NiIsInppcCI6IkRFRiJ9.eNqqVspMUbIyMqoFAAAA__8.dRapc9EPiZclZy6vHnNwCuhG1zYTJFXW4h307zydOZ0"
+            return t
+        }
 
-        return MoyaProvider<WalletAPI>(stubClosure: stubClosure, plugins: plugins)
+        let auth   = AccessTokenPlugin(tokenClosure: token())
+        let logger = NetworkLoggerPlugin(cURL: true)
+
+        let stub = { (target: WalletAPI) -> StubBehavior in .never }
+        return MoyaProvider<WalletAPI>(stubClosure: stub, plugins: [logger, auth])
     }()
 }

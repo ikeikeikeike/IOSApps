@@ -53,6 +53,7 @@
 		88BD746C205AEC3200132C84 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD746B205AEC3200132C84 /* WalletModel.swift */; };
 		88BD746E205AEC8800132C84 /* WalletModelTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD746D205AEC8800132C84 /* WalletModelTranslator.swift */; };
 		88BD7470205AEE1700132C84 /* WalletRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD746F205AEE1700132C84 /* WalletRepo.swift */; };
+		88BD7476205D7DC900132C84 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BD7475205D7DC900132C84 /* KeychainAccess.framework */; };
 		88D7BB45204721EE00A85603 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D7BB44204721EE00A85603 /* XLPagerTabStrip.framework */; };
 		88D91D6D205AB94B00F30254 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D91D6C205AB94B00F30254 /* LoginPresenter.swift */; };
 		88D91D6F205ABAC100F30254 /* WalletUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D91D6E205ABAC100F30254 /* WalletUseCase.swift */; };
@@ -143,6 +144,7 @@
 		88BD746B205AEC3200132C84 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
 		88BD746D205AEC8800132C84 /* WalletModelTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModelTranslator.swift; sourceTree = "<group>"; };
 		88BD746F205AEE1700132C84 /* WalletRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRepo.swift; sourceTree = "<group>"; };
+		88BD7475205D7DC900132C84 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		88D7BB44204721EE00A85603 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
 		88D91D6C205AB94B00F30254 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		88D91D6E205ABAC100F30254 /* WalletUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletUseCase.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BD7476205D7DC900132C84 /* KeychainAccess.framework in Frameworks */,
 				8877338D2056E7A600FB2F58 /* Compass.framework in Frameworks */,
 				88D7BB45204721EE00A85603 /* XLPagerTabStrip.framework in Frameworks */,
 				88E7231F203C8A820085AD2F /* CSV.framework in Frameworks */,
@@ -322,6 +325,7 @@
 		88A12B85203B2CFA005E3360 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				88BD7471205B029500132C84 /* Login */,
 				88A12B8B203C0AAD005E3360 /* Chart */,
 			);
 			path = Presenter;
@@ -366,7 +370,6 @@
 			isa = PBXGroup;
 			children = (
 				88A12B8E203C0B23005E3360 /* ChartPresenter.swift */,
-				88D91D6C205AB94B00F30254 /* LoginPresenter.swift */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -381,9 +384,25 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		88BD7471205B029500132C84 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				88D91D6C205AB94B00F30254 /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		88BD7474205D5FAB00132C84 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 		88DA4FD72039ACF8002BF13E /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				88BD7474205D5FAB00132C84 /* DB */,
 				88DA4FDD2039AE59002BF13E /* API */,
 				88DA4FDE2039B931002BF13E /* TradeStore.swift */,
 				88D91D72205ADED800F30254 /* WalletStore.swift */,
@@ -487,6 +506,7 @@
 		FEFC684FF0D19EC97317EEE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88BD7475205D7DC900132C84 /* KeychainAccess.framework */,
 				8877338C2056E7A600FB2F58 /* Compass.framework */,
 				88D7BB44204721EE00A85603 /* XLPagerTabStrip.framework */,
 				88E7231E203C8A820085AD2F /* CSV.framework */,
@@ -788,6 +808,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/CSV.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/XLPagerTabStrip.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Compass.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
 			);
 			name = "Run Script";
 			outputPaths = (

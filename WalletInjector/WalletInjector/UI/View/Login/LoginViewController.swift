@@ -51,7 +51,7 @@ class LoginViewController: UIViewController {
                 print(signio.token)
                 try? Navigator.navigate(urn: "settings")
 
-            case .error(let _):
+            case .error:
                 self.errorAlert()
             }
         }

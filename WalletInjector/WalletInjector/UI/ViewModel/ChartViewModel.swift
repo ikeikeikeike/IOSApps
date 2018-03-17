@@ -25,7 +25,7 @@ class ChartViewModelImpl: ChartViewModel {
         var entries = [ChartDataEntry]()
 
         for (index, model) in tradeModels.enumerated() {
-            guard let unix = model.unixtime else {
+            guard let _ = model.unixtime else {
                 continue
             }
             guard let price = model.price else {
