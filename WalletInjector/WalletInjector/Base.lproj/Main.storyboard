@@ -17,7 +17,25 @@
                     <view key="view" contentMode="scaleToFill" id="zcf-aE-FjH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLS-D6-nBd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Smf-3T-DFP"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Profile" id="g8Y-Yy-7y7">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="OoD-8R-HhD"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uLS-D6-nBd" firstAttribute="leading" secondItem="pwJ-u8-5kI" secondAttribute="leading" id="U7M-E4-lEL"/>
+                            <constraint firstItem="uLS-D6-nBd" firstAttribute="trailing" secondItem="pwJ-u8-5kI" secondAttribute="trailing" id="hfM-E9-gRA"/>
+                            <constraint firstItem="uLS-D6-nBd" firstAttribute="top" secondItem="zcf-aE-FjH" secondAttribute="top" id="p6t-4e-uax"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pwJ-u8-5kI"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="R5d-YR-nzp"/>
@@ -307,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2N-1E-sRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1714" y="-219"/>
+            <point key="canvasLocation" x="-1588" y="-219"/>
         </scene>
         <!--BitflyerJPY View Controller-->
         <scene sceneID="E5M-d1-Srf">

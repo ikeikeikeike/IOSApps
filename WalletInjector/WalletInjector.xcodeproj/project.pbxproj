@@ -35,7 +35,7 @@
 		8857FF58204874E300B8B975 /* EighthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF57204874E300B8B975 /* EighthViewController.swift */; };
 		8857FF5A204874EB00B8B975 /* NinethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF59204874EB00B8B975 /* NinethViewController.swift */; };
 		8857FF5C204874F100B8B975 /* TenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF5B204874F100B8B975 /* TenthViewController.swift */; };
-		8857FF5E20489B2D00B8B975 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF5D20489B2D00B8B975 /* Strings.swift */; };
+		8857FF5E20489B2D00B8B975 /* Strings+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8857FF5D20489B2D00B8B975 /* Strings+Extention.swift */; };
 		8863B95220335A1000449D3B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95120335A1000449D3B /* Charts.framework */; };
 		8863B95720335F6E00449D3B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95420335F6E00449D3B /* RealmSwift.framework */; };
 		8863B95820335F6E00449D3B /* ChartsRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8863B95520335F6E00449D3B /* ChartsRealm.framework */; };
@@ -47,7 +47,7 @@
 		8877338B2056D07900FB2F58 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8877338A2056D07900FB2F58 /* LoginViewController.swift */; };
 		8877338D2056E7A600FB2F58 /* Compass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8877338C2056E7A600FB2F58 /* Compass.framework */; };
 		887733932056F1A300FB2F58 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887733922056F1A300FB2F58 /* Storyboard.swift */; };
-		887733952056F42D00FB2F58 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887733942056F42D00FB2F58 /* UI.swift */; };
+		887733952056F42D00FB2F58 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887733942056F42D00FB2F58 /* UIViewController+Extension.swift */; };
 		88A12B8F203C0B23005E3360 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B8E203C0B23005E3360 /* ChartPresenter.swift */; };
 		88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A12B91203C7A9C005E3360 /* CSVDecoder.swift */; };
 		88BD746C205AEC3200132C84 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD746B205AEC3200132C84 /* WalletModel.swift */; };
@@ -126,7 +126,7 @@
 		8857FF57204874E300B8B975 /* EighthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthViewController.swift; sourceTree = "<group>"; };
 		8857FF59204874EB00B8B975 /* NinethViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinethViewController.swift; sourceTree = "<group>"; };
 		8857FF5B204874F100B8B975 /* TenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthViewController.swift; sourceTree = "<group>"; };
-		8857FF5D20489B2D00B8B975 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		8857FF5D20489B2D00B8B975 /* Strings+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extention.swift"; sourceTree = "<group>"; };
 		8863B95120335A1000449D3B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		8863B95420335F6E00449D3B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		8863B95520335F6E00449D3B /* ChartsRealm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartsRealm.framework; path = Carthage/Build/iOS/ChartsRealm.framework; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		8877338A2056D07900FB2F58 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8877338C2056E7A600FB2F58 /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
 		887733922056F1A300FB2F58 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		887733942056F42D00FB2F58 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		887733942056F42D00FB2F58 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		88A12B8E203C0B23005E3360 /* ChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
 		88A12B91203C7A9C005E3360 /* CSVDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVDecoder.swift; sourceTree = "<group>"; };
 		88BD746B205AEC3200132C84 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
@@ -301,6 +301,7 @@
 		886A983C2039A3900057F6EE /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				887733942056F42D00FB2F58 /* UIViewController+Extension.swift */,
 				886A983F2039A5690057F6EE /* Swinject+Injector.swift */,
 				886A983D2039A4390057F6EE /* SwinjectStoryboard+Injector.swift */,
 				887733922056F1A300FB2F58 /* Storyboard.swift */,
@@ -381,8 +382,7 @@
 			children = (
 				88BD7477205D843100132C84 /* Key */,
 				88A12B91203C7A9C005E3360 /* CSVDecoder.swift */,
-				8857FF5D20489B2D00B8B975 /* Strings.swift */,
-				887733942056F42D00FB2F58 /* UI.swift */,
+				8857FF5D20489B2D00B8B975 /* Strings+Extention.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -877,7 +877,7 @@
 				8857FF462047F29D00B8B975 /* RootSlideViewController.swift in Sources */,
 				88492622203A046600436860 /* TradeEntity.swift in Sources */,
 				88DA4FDF2039B931002BF13E /* TradeStore.swift in Sources */,
-				887733952056F42D00FB2F58 /* UI.swift in Sources */,
+				887733952056F42D00FB2F58 /* UIViewController+Extension.swift in Sources */,
 				8877338B2056D07900FB2F58 /* LoginViewController.swift in Sources */,
 				8857FF4E204874A100B8B975 /* ForthViewController.swift in Sources */,
 				8857FF58204874E300B8B975 /* EighthViewController.swift in Sources */,
@@ -898,7 +898,7 @@
 				88DAC2B520302DB600874726 /* SettingsViewController.swift in Sources */,
 				8857FF4820486E7100B8B975 /* CoincheckJPYViewController.swift in Sources */,
 				88A12B92203C7A9C005E3360 /* CSVDecoder.swift in Sources */,
-				8857FF5E20489B2D00B8B975 /* Strings.swift in Sources */,
+				8857FF5E20489B2D00B8B975 /* Strings+Extention.swift in Sources */,
 				88D91D6D205AB94B00F30254 /* LoginPresenter.swift in Sources */,
 				88E4FED82046F74200E0DF58 /* ChartViewModel.swift in Sources */,
 				88D91D6F205ABAC100F30254 /* WalletUseCase.swift in Sources */,

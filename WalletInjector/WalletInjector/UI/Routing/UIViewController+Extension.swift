@@ -1,5 +1,5 @@
 //
-//  UI.swift
+//  UIViewController+Extension.swift
 //  WalletInjector
 //
 //  Created by Tatsuo Ikeda on 2018/03/13.

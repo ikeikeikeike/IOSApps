@@ -12,14 +12,14 @@ final class Injector {
 
     class func initialize() {
         prepared()
-        afterPrepared()
+        inject()
     }
 
     private class func prepared() {
         ct.register(TokenKey.self) { _ in TokenKeyImpl() }
     }
 
-    private class func afterPrepared() {
+    private class func inject() {
         ct.register(TradeProvider.self) { _ in TradeProviderImpl() }
         ct.register(TradeStore.self) { _ in TradeStoreImpl() }
         ct.register(TradeRepo.self) { _ in TradeRepoImpl() }
