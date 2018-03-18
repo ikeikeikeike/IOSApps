@@ -16,6 +16,9 @@
 		88D5A54A205EA9AC00D4EE4B /* A.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A549205EA9AC00D4EE4B /* A.storyboard */; };
 		88D5A54C205EA9B500D4EE4B /* B.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A54B205EA9B500D4EE4B /* B.storyboard */; };
 		88D5A54E205EA9B900D4EE4B /* C.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A54D205EA9B900D4EE4B /* C.storyboard */; };
+		88D5A55A205EB66000D4EE4B /* AItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A559205EB66000D4EE4B /* AItem.storyboard */; };
+		88D5A55C205EB6C500D4EE4B /* AA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A55B205EB6C500D4EE4B /* AA.storyboard */; };
+		88D5A55E205EB6FA00D4EE4B /* AB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A55D205EB6FA00D4EE4B /* AB.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		88D5A549205EA9AC00D4EE4B /* A.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = A.storyboard; sourceTree = "<group>"; };
 		88D5A54B205EA9B500D4EE4B /* B.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = B.storyboard; sourceTree = "<group>"; };
 		88D5A54D205EA9B900D4EE4B /* C.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = C.storyboard; sourceTree = "<group>"; };
+		88D5A559205EB66000D4EE4B /* AItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AItem.storyboard; sourceTree = "<group>"; };
+		88D5A55B205EB6C500D4EE4B /* AA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AA.storyboard; sourceTree = "<group>"; };
+		88D5A55D205EB6FA00D4EE4B /* AB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AB.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,9 @@
 			children = (
 				88D5A51E205EA89600D4EE4B /* Main.storyboard */,
 				88D5A549205EA9AC00D4EE4B /* A.storyboard */,
+				88D5A55D205EB6FA00D4EE4B /* AB.storyboard */,
+				88D5A55B205EB6C500D4EE4B /* AA.storyboard */,
+				88D5A559205EB66000D4EE4B /* AItem.storyboard */,
 				88D5A54B205EA9B500D4EE4B /* B.storyboard */,
 				88D5A54D205EA9B900D4EE4B /* C.storyboard */,
 			);
@@ -250,8 +259,11 @@
 				88D5A525205EA89600D4EE4B /* LaunchScreen.storyboard in Resources */,
 				88D5A54E205EA9B900D4EE4B /* C.storyboard in Resources */,
 				88D5A54C205EA9B500D4EE4B /* B.storyboard in Resources */,
+				88D5A55A205EB66000D4EE4B /* AItem.storyboard in Resources */,
 				88D5A522205EA89600D4EE4B /* Assets.xcassets in Resources */,
+				88D5A55C205EB6C500D4EE4B /* AA.storyboard in Resources */,
 				88D5A520205EA89600D4EE4B /* Main.storyboard in Resources */,
+				88D5A55E205EB6FA00D4EE4B /* AB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
