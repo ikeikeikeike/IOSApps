@@ -1,11 +1,10 @@
 //
-//  Route+UINavigationController.swift
+//  Routes.swift
 //  PracticeDesign
 //
-//  Created by Tatsuo Ikeda on 2018/03/21.
+//  Created by Tatsuo Ikeda on 2018/03/22.
 //  Copyright © 2018 Tatsuo Ikeda. All rights reserved.
 //
-
 import UIKit
 import Compass
 
@@ -19,12 +18,12 @@ class Routes {
     private class func setupRouter(){
         Navigator.scheme = "compass"
         Navigator.routes = [
-            "aa:{username}",
+            "aa:{title}",
             "ab:{title}",
         ]
         
         router.routes = [
-            "aa:{username}": AARoute(),
+            "aa:{title}": AARoute(),
             "ab:{title}": ABRoute(),
         ]
     }
@@ -35,11 +34,11 @@ struct AARoute: Routable {
         .instantiateViewController(withIdentifier: "AAViewController")
     
     func navigate(to location: Location, from currentController: CurrentController) throws {
-        guard let username = location.arguments["username"] else {
+        guard let title = location.arguments["title"] else {
             return
         }
         
-        vc.title = username
+        vc.title = title
         
         currentController.navigationController?.pushViewController(vc, animated: true)
     }
@@ -55,30 +54,8 @@ struct ABRoute: Routable {
         }
         
         vc.title = username
-
+        
         currentController.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-extension UIViewController {
-    public func navigate(to route: String){
-        (try? Navigator.navigate(urn: route)) ?? print("could not navigate to \(route)")
-    }
-    
-    public func handleRoute(_ url: URL, router: Router)  {
-        guard let location = Navigator.parse(url: url) else {
-            print("Location not found")
-            return
-        }
-        
-        router.navigate(to: location, from: self)
-    }
-
-    public static var defaultNib: String {
-        return self.description().components(separatedBy: ".").dropFirst().joined(separator: ".")
-    }
-    
-    public static var storyboardIdentifier: String {
-        return self.description().components(separatedBy: ".").dropFirst().joined(separator: ".")
-    }
-}
