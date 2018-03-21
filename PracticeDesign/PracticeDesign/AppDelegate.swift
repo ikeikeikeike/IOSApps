@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        
+        Routes.initialize()
+        
         if let initialTab = self.window!.rootViewController as? UITabBarController {
             initialTab.selectedIndex = 0
         }

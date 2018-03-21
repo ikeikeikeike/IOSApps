@@ -13,7 +13,7 @@
 		8801B1092062914500443CA3 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B1082062914500443CA3 /* ABViewController.swift */; };
 		8801B10B2062914D00443CA3 /* AAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B10A2062914D00443CA3 /* AAViewController.swift */; };
 		88524FDA20628A5000CFEAB2 /* Compass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88524FD920628A5000CFEAB2 /* Compass.framework */; };
-		88524FDE20628C4700CFEAB2 /* Route+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88524FDD20628C4700CFEAB2 /* Route+UINavigationController.swift */; };
+		88524FDE20628C4700CFEAB2 /* Routes+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88524FDD20628C4700CFEAB2 /* Routes+UIViewController.swift */; };
 		88D5A51B205EA89600D4EE4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5A51A205EA89600D4EE4B /* AppDelegate.swift */; };
 		88D5A520205EA89600D4EE4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A51E205EA89600D4EE4B /* Main.storyboard */; };
 		88D5A522205EA89600D4EE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A521205EA89600D4EE4B /* Assets.xcassets */; };
@@ -52,7 +52,7 @@
 		8801B1082062914500443CA3 /* ABViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABViewController.swift; sourceTree = "<group>"; };
 		8801B10A2062914D00443CA3 /* AAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAViewController.swift; sourceTree = "<group>"; };
 		88524FD920628A5000CFEAB2 /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
-		88524FDD20628C4700CFEAB2 /* Route+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Route+UINavigationController.swift"; sourceTree = "<group>"; };
+		88524FDD20628C4700CFEAB2 /* Routes+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routes+UIViewController.swift"; sourceTree = "<group>"; };
 		88D5A517205EA89600D4EE4B /* PracticeDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D5A51A205EA89600D4EE4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D5A51F205EA89600D4EE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		88524FDC20628BF000CFEAB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				88524FDD20628C4700CFEAB2 /* Route+UINavigationController.swift */,
+				88524FDD20628C4700CFEAB2 /* Routes+UIViewController.swift */,
 				8801B10020628D9500443CA3 /* AViewController.swift */,
 				8801B10A2062914D00443CA3 /* AAViewController.swift */,
 				8801B1082062914500443CA3 /* ABViewController.swift */,
@@ -349,7 +349,7 @@
 				8801B10720628DE900443CA3 /* CViewController.swift in Sources */,
 				8801B1092062914500443CA3 /* ABViewController.swift in Sources */,
 				8801B10120628D9500443CA3 /* AViewController.swift in Sources */,
-				88524FDE20628C4700CFEAB2 /* Route+UINavigationController.swift in Sources */,
+				88524FDE20628C4700CFEAB2 /* Routes+UIViewController.swift in Sources */,
 				8801B10B2062914D00443CA3 /* AAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--BB-->
+        <!--AB-->
         <scene sceneID="WGI-dQ-DOF">
             <objects>
                 <viewController storyboardIdentifier="ABViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5ul-it-MOu" customClass="ABViewController" customModule="PracticeDesign" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bXq-YT-RUP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="BB" id="rGo-7w-FlJ"/>
+                    <navigationItem key="navigationItem" title="AB" id="rGo-7w-FlJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipI-fq-cnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,8 +19,13 @@ class AViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
     
+    }
+
+    @IBAction func transferAA(_ sender: Any) {
+        let url = URL(string: "compass://aa:something")!
+        handleRoute(url, router: Routes.router)
+    }
 
     /*
     // MARK: - Navigation
