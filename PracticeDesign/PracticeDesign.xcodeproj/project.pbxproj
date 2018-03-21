@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8801B10120628D9500443CA3 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B10020628D9500443CA3 /* AViewController.swift */; };
+		8801B10520628DE300443CA3 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B10420628DE300443CA3 /* BViewController.swift */; };
+		8801B10720628DE900443CA3 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B10620628DE900443CA3 /* CViewController.swift */; };
+		8801B1092062914500443CA3 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B1082062914500443CA3 /* ABViewController.swift */; };
+		8801B10B2062914D00443CA3 /* AAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B10A2062914D00443CA3 /* AAViewController.swift */; };
+		88524FDA20628A5000CFEAB2 /* Compass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88524FD920628A5000CFEAB2 /* Compass.framework */; };
+		88524FDE20628C4700CFEAB2 /* Route+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88524FDD20628C4700CFEAB2 /* Route+UINavigationController.swift */; };
 		88D5A51B205EA89600D4EE4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D5A51A205EA89600D4EE4B /* AppDelegate.swift */; };
 		88D5A520205EA89600D4EE4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A51E205EA89600D4EE4B /* Main.storyboard */; };
 		88D5A522205EA89600D4EE4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A521205EA89600D4EE4B /* Assets.xcassets */; };
@@ -39,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8801B10020628D9500443CA3 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		8801B10420628DE300443CA3 /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		8801B10620628DE900443CA3 /* CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
+		8801B1082062914500443CA3 /* ABViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABViewController.swift; sourceTree = "<group>"; };
+		8801B10A2062914D00443CA3 /* AAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAViewController.swift; sourceTree = "<group>"; };
+		88524FD920628A5000CFEAB2 /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
+		88524FDD20628C4700CFEAB2 /* Route+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Route+UINavigationController.swift"; sourceTree = "<group>"; };
 		88D5A517205EA89600D4EE4B /* PracticeDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D5A51A205EA89600D4EE4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D5A51F205EA89600D4EE4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88524FDA20628A5000CFEAB2 /* Compass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +99,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88524FD820628A5000CFEAB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88524FD920628A5000CFEAB2 /* Compass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88524FDC20628BF000CFEAB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88524FDD20628C4700CFEAB2 /* Route+UINavigationController.swift */,
+				8801B10020628D9500443CA3 /* AViewController.swift */,
+				8801B10A2062914D00443CA3 /* AAViewController.swift */,
+				8801B1082062914500443CA3 /* ABViewController.swift */,
+				8801B10420628DE300443CA3 /* BViewController.swift */,
+				8801B10620628DE900443CA3 /* CViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		88D5A50E205EA89600D4EE4B = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +127,7 @@
 				88D5A52E205EA89600D4EE4B /* PracticeDesignTests */,
 				88D5A539205EA89600D4EE4B /* PracticeDesignUITests */,
 				88D5A518205EA89600D4EE4B /* Products */,
+				88524FD820628A5000CFEAB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +144,7 @@
 		88D5A519205EA89600D4EE4B /* PracticeDesign */ = {
 			isa = PBXGroup;
 			children = (
+				88524FDC20628BF000CFEAB2 /* View */,
 				88D5A548205EA97B00D4EE4B /* Storyboard */,
 				88D5A51A205EA89600D4EE4B /* AppDelegate.swift */,
 				88D5A521205EA89600D4EE4B /* Assets.xcassets */,
@@ -139,8 +177,8 @@
 			children = (
 				88D5A51E205EA89600D4EE4B /* Main.storyboard */,
 				88D5A549205EA9AC00D4EE4B /* A.storyboard */,
-				88D5A55D205EB6FA00D4EE4B /* AB.storyboard */,
 				88D5A55B205EB6C500D4EE4B /* AA.storyboard */,
+				88D5A55D205EB6FA00D4EE4B /* AB.storyboard */,
 				88D5A559205EB66000D4EE4B /* AItem.storyboard */,
 				88D5A54B205EA9B500D4EE4B /* B.storyboard */,
 				88D5A54D205EA9B900D4EE4B /* C.storyboard */,
@@ -158,6 +196,7 @@
 				88D5A513205EA89600D4EE4B /* Sources */,
 				88D5A514205EA89600D4EE4B /* Frameworks */,
 				88D5A515205EA89600D4EE4B /* Resources */,
+				88524FDB20628A8B00CFEAB2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -283,12 +322,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88524FDB20628A8B00CFEAB2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Compass.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88D5A513205EA89600D4EE4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				88D5A51B205EA89600D4EE4B /* AppDelegate.swift in Sources */,
+				8801B10520628DE300443CA3 /* BViewController.swift in Sources */,
+				8801B10720628DE900443CA3 /* CViewController.swift in Sources */,
+				8801B1092062914500443CA3 /* ABViewController.swift in Sources */,
+				8801B10120628D9500443CA3 /* AViewController.swift in Sources */,
+				88524FDE20628C4700CFEAB2 /* Route+UINavigationController.swift in Sources */,
+				8801B10B2062914D00443CA3 /* AAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +518,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B9QFL4ZF2R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PracticeDesign/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = it.ikeikeikeike.PracticeDesign;
@@ -471,6 +537,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B9QFL4ZF2R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PracticeDesign/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = it.ikeikeikeike.PracticeDesign;

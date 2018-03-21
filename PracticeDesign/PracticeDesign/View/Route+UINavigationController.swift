@@ -1,5 +1,5 @@
 //
-//  Routes+UINavigationController.swift
+//  Route+UINavigationController.swift
 //  PracticeDesign
 //
 //  Created by Tatsuo Ikeda on 2018/03/21.
@@ -9,8 +9,9 @@
 import UIKit
 import Compass
 
-struct ARoute: Routable {
-    let vc = UIStoryboard(name: "A", bundle: nil).instantiateViewController(withIdentifier: "AViewController")
+struct AARoute: Routable {
+    let vc = UIStoryboard(name: "AA", bundle: nil)
+        .instantiateViewController(withIdentifier: "AAViewController")
     
     func navigate(to location: Location, from currentController: CurrentController) throws {
         guard let username = location.arguments["username"] else {
@@ -23,8 +24,9 @@ struct ARoute: Routable {
     }
 }
 
-struct BRoute: Routable {
-    let vc = UIStoryboard(name: "B", bundle: nil).instantiateViewController(withIdentifier: "BViewController")
+struct ABRoute: Routable {
+    let vc = UIStoryboard(name: "AB", bundle: nil)
+        .instantiateViewController(withIdentifier: "ABViewController")
     
     func navigate(to location: Location, from currentController: CurrentController) throws {
         guard let username = location.arguments["title"] else {
@@ -56,30 +58,32 @@ public class RouteNavigationController: UINavigationController {
     }
     
     var router = Router()
-    let rootviewcontroller = UIStoryboard(name: "CompassMain", bundle: nil).instantiateViewController(withIdentifier: "CompassRootViewController")
-    let loginController = UIStoryboard(name: "CompassMain", bundle: nil).instantiateViewController(withIdentifier: "CompassLoginViewController")
+    let aaVC = UIStoryboard(name: "AA", bundle: nil)
+        .instantiateViewController(withIdentifier: "AAViewController")
+    let bbVC = UIStoryboard(name: "AB", bundle: nil)
+        .instantiateViewController(withIdentifier: "ABViewController")
 
     override public func viewDidLoad() {
         super.viewDidLoad()
         
         Navigator.scheme = "compass"
-        print( Navigator.scheme)
+        print(Navigator.scheme)
         
         Navigator.routes = [
-            "login:{username}",
-            "home:{title}",
+            "aa:{username}",
+            "ab:{title}",
         ]
         print( Navigator.routes)
         
         router.routes = [
-            "login:{username}": LoginRoute(),
-            "home:{title}": HomeRoute(),
+            "aa:{username}": AARoute(),
+            "ab:{title}": ABRoute(),
         ]
-        print( Navigator.routes)
+        print(Navigator.routes)
         print(router.routes)
         
-        let url = URL(string: "compass://login:George_logged_in")!
-        self.handleRoute(url, router: router)
+//        let url = URL(string: "compass://aa:init")!
+//        self.handleRoute(url, router: router)
     }
     
     override public func didReceiveMemoryWarning() {
