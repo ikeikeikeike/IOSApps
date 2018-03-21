@@ -62,11 +62,7 @@ struct ABRoute: Routable {
 
 extension UIViewController {
     public func navigate(to route: String){
-        do {
-            try Navigator.navigate(urn: route)
-        } catch {
-            print("could not navigate to \(route)")
-        }
+        (try? Navigator.navigate(urn: route)) ?? print("could not navigate to \(route)")
     }
     
     public func handleRoute(_ url: URL, router: Router)  {
@@ -74,6 +70,7 @@ extension UIViewController {
             print("Location not found")
             return
         }
+        
         router.navigate(to: location, from: self)
     }
 
