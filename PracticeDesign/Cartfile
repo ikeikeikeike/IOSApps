@@ -1,0 +1,11 @@
+github "Swinject/Swinject" ~> 2.2
+github "Swinject/SwinjectStoryboard" ~> 1.1
+
+github "ReactiveX/RxSwift" ~> 4.1
+github "Moya/Moya" ~> 11.0
+
+github "realm/realm-cocoa" ~> 3.1
+
+github "hyperoslo/Compass" ~> 6.0
+
+github "kishikawakatsumi/KeychainAccess" ~> 3.1
