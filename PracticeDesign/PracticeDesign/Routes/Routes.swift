@@ -20,11 +20,13 @@ class Routes {
         Navigator.routes = [
             "aa:{title}",
             "ab:{title}",
+            "dupdater:{section}:{title}",
         ]
         
         router.routes = [
             "aa:{title}": AARoute(),
             "ab:{title}": ABRoute(),
+            "dupdater:{section}:{title}": DUpdaterRoute(),
         ]
     }
 }
@@ -49,13 +51,28 @@ struct ABRoute: Routable {
         .instantiateViewController(withIdentifier: "ABViewController")
     
     func navigate(to location: Location, from currentController: CurrentController) throws {
-        guard let username = location.arguments["title"] else {
+        guard let title = location.arguments["title"] else {
             return
         }
         
-        vc.title = username
+        vc.title = title
         
         currentController.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
+
+struct DUpdaterRoute: Routable {
+    let vc = UIStoryboard(name: "DUpdater", bundle: nil)
+        .instantiateViewController(withIdentifier: "DUpdaterViewController")
+    
+    func navigate(to location: Location, from currentController: CurrentController) throws {
+        guard let title = location.arguments["title"] else {
+            return
+        }
+        
+        vc.title = title
+        
+        currentController.navigationController?.pushViewController(vc, animated: true)
+    }
+}

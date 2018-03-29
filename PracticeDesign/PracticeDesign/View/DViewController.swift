@@ -27,6 +27,15 @@ class DViewController: UITableViewController {
             }
         }
 
+        func title() -> String {
+            switch self {
+            case .User:
+                return "user"
+            case .Account:
+                return "account"
+            }
+        }
+
         func rowsCount() -> Int {
             return rows().count
         }
@@ -70,7 +79,14 @@ class DViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Section-\(section)"
+        switch Section(rawValue: section) {
+        case .some(.User):
+            return Section.User.title()
+        case .some(.Account):
+            return Section.Account.title()
+        default:
+            return "Section-\(section)"
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -78,9 +94,15 @@ class DViewController: UITableViewController {
 
         switch Section(rawValue: indexPath.section) {
         case .some(.User):
-            print("User \(indexPath.row)")
+            let s = Section.User
+            let url = URL(string: "compass://dupdater:\(s.title()):\(s[indexPath.row])")!
+            handleRoute(url, router: Routes.router)
+
         case .some(.Account):
-            print("Account \(indexPath.row)")
+            let s = Section.Account
+            let url = URL(string: "compass://dupdater:\(s.title()):\(s[indexPath.row])")!
+            handleRoute(url, router: Routes.router)
+
         default:
             print("Default")
         }

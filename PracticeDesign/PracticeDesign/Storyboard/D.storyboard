@@ -42,6 +42,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="D" id="al1-Lm-boj"/>
+                    <connections>
+                        <segue destination="fiL-8g-xdB" kind="show" id="fOo-TY-Vo3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNp-CR-scX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,6 +66,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsb-cJ-Wvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-659" y="842"/>
+        </scene>
+        <!--DUpdaterViewController-->
+        <scene sceneID="Qfe-UO-bPM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DUpdaterViewController" storyboardName="DUpdater" referencedIdentifier="DUpdaterViewController" id="fiL-8g-xdB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7v-Ed-gEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="841"/>
         </scene>
     </scenes>
 </document>
