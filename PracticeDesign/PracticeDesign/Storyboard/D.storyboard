@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="-659" y="842"/>
         </scene>
-        <!--DUpdaterViewController-->
+        <!--DUpdaterTableViewController-->
         <scene sceneID="Qfe-UO-bPM">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DUpdaterViewController" storyboardName="DUpdater" referencedIdentifier="DUpdaterViewController" id="fiL-8g-xdB" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="DUpdaterTableViewController" storyboardName="DUpdater" referencedIdentifier="DUpdaterTableViewController" id="fiL-8g-xdB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7v-Ed-gEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1002" y="841"/>
