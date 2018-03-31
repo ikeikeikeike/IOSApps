@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol InputTextTableCellDelegate {
-    func textFieldDidEndEditing(cell: InputTextTableViewCell, value: String) -> ()
+protocol InputTextTableViewCellDelegate {
+    func textFieldDidEndEditing(cell: InputTextTableViewCell, textField: UITextField) -> ()
 }
 
 class InputTextTableViewCell: UITableViewCell, UITextFieldDelegate {
-    var delegate: InputTextTableCellDelegate! = nil
+    var delegate: InputTextTableViewCellDelegate! = nil
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,8 +22,13 @@ class InputTextTableViewCell: UITableViewCell, UITextFieldDelegate {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    internal func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
-    internal func textFieldDidEndEditing(textField: UITextField) {
-        delegate.textFieldDidEndEditing(cell: self, value: textField.text!)
+    internal func textFieldDidEndEditing(_ textField: UITextField) {
+        delegate.textFieldDidEndEditing(cell: self, textField: textField)
     }
 }

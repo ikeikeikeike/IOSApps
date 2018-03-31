@@ -1,51 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mgV-4E-f0O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nw0-OB-0jc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Title-->
-        <scene sceneID="hD0-Ig-Vda">
+        <scene sceneID="E03-48-n12">
             <objects>
-                <tableViewController storyboardIdentifier="DUpdaterTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mgV-4E-f0O" customClass="DUpdaterTableViewController" customModule="PracticeDesign" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="kPH-cV-yp1">
+                <viewController storyboardIdentifier="DUpdaterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nw0-OB-0jc" customClass="DUpdaterViewController" customModule="PracticeDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9KP-SB-KqE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any text here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-rk-Ysu">
+                                <rect key="frame" x="16" y="110" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZT-tt-rXp">
+                                <rect key="frame" x="120" y="148" width="135" height="27"/>
+                                <color key="backgroundColor" red="0.051254427571346281" green="0.78475145725388606" blue="0.15885403302362505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DUpdaterTableViewCell" textLabel="uTf-90-j9j" style="IBUITableViewCellStyleDefault" id="43d-U4-Que">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="43d-U4-Que" id="RiW-2A-SYo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uTf-90-j9j">
-                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="mgV-4E-f0O" id="J7u-hv-z32"/>
-                            <outlet property="delegate" destination="mgV-4E-f0O" id="YqQ-OW-KKz"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="ffv-g7-Poe"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PdZ-r5-bAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="4ZT-tt-rXp" firstAttribute="leading" secondItem="eKv-fI-SLr" secondAttribute="leading" constant="120" id="3T6-ub-hBs"/>
+                            <constraint firstItem="WTT-rk-Ysu" firstAttribute="leading" secondItem="eKv-fI-SLr" secondAttribute="leading" constant="16" id="4Se-8q-idU"/>
+                            <constraint firstItem="eKv-fI-SLr" firstAttribute="trailing" secondItem="WTT-rk-Ysu" secondAttribute="trailing" constant="16" id="FNh-cK-jmR"/>
+                            <constraint firstItem="WTT-rk-Ysu" firstAttribute="top" secondItem="eKv-fI-SLr" secondAttribute="top" constant="46" id="OiR-Rk-srO"/>
+                            <constraint firstItem="4ZT-tt-rXp" firstAttribute="top" secondItem="WTT-rk-Ysu" secondAttribute="bottom" constant="8" id="YpI-3e-odF"/>
+                            <constraint firstItem="eKv-fI-SLr" firstAttribute="trailing" secondItem="4ZT-tt-rXp" secondAttribute="trailing" constant="120" id="bc2-1T-LRm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eKv-fI-SLr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="BfY-kY-Sli"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoX-8P-Snq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="855"/>
+            <point key="canvasLocation" x="704.79999999999995" y="776.76161919040487"/>
         </scene>
     </scenes>
 </document>

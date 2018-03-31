@@ -64,7 +64,7 @@ struct ABRoute: Routable {
 
 struct DUpdaterRoute: Routable {
     let vc = UIStoryboard(name: "DUpdater", bundle: nil)
-        .instantiateViewController(withIdentifier: "DUpdaterTableViewController")
+        .instantiateViewController(withIdentifier: "DUpdaterViewController")
     
     func navigate(to location: Location, from currentController: CurrentController) throws {
         guard let title = location.arguments["title"] else {
