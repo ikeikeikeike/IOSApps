@@ -14,6 +14,7 @@
 		8801B10B2062914D00443CA3 /* AAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B10A2062914D00443CA3 /* AAViewController.swift */; };
 		880651A2206CCE750060D293 /* DUpdater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880651A1206CCE750060D293 /* DUpdater.storyboard */; };
 		880651A4206CD2B80060D293 /* DUpdaterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880651A3206CD2B80060D293 /* DUpdaterTableViewController.swift */; };
+		880651A7206CF3220060D293 /* InputTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880651A6206CF3220060D293 /* InputTextTableViewCell.swift */; };
 		88524FDA20628A5000CFEAB2 /* Compass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88524FD920628A5000CFEAB2 /* Compass.framework */; };
 		88524FDE20628C4700CFEAB2 /* Routes+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88524FDD20628C4700CFEAB2 /* Routes+UIViewController.swift */; };
 		88AB60EB2062D43C0083536B /* DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AB60EA2062D43C0083536B /* DViewController.swift */; };
@@ -58,6 +59,7 @@
 		8801B10A2062914D00443CA3 /* AAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAViewController.swift; sourceTree = "<group>"; };
 		880651A1206CCE750060D293 /* DUpdater.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DUpdater.storyboard; sourceTree = "<group>"; };
 		880651A3206CD2B80060D293 /* DUpdaterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUpdaterTableViewController.swift; sourceTree = "<group>"; };
+		880651A6206CF3220060D293 /* InputTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextTableViewCell.swift; sourceTree = "<group>"; };
 		88524FD920628A5000CFEAB2 /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
 		88524FDD20628C4700CFEAB2 /* Routes+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routes+UIViewController.swift"; sourceTree = "<group>"; };
 		88AB60EA2062D43C0083536B /* DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 			children = (
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		880651A5206CF2D40060D293 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				880651A6206CF3220060D293 /* InputTextTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		88524FD820628A5000CFEAB2 /* Frameworks */ = {
@@ -173,6 +183,7 @@
 			children = (
 				8806519C206CC8390060D293 /* Client */,
 				88AB60F32062F3680083536B /* Routes */,
+				880651A5206CF2D40060D293 /* Cell */,
 				88524FDC20628BF000CFEAB2 /* View */,
 				88D5A548205EA97B00D4EE4B /* Storyboard */,
 				88D5A51A205EA89600D4EE4B /* AppDelegate.swift */,
@@ -281,7 +292,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Tatsuo Ikeda";
 				TargetAttributes = {
 					88D5A516205EA89600D4EE4B = {
@@ -379,6 +390,7 @@
 			files = (
 				88AB60EB2062D43C0083536B /* DViewController.swift in Sources */,
 				88D5A51B205EA89600D4EE4B /* AppDelegate.swift in Sources */,
+				880651A7206CF3220060D293 /* InputTextTableViewCell.swift in Sources */,
 				8801B10520628DE300443CA3 /* BViewController.swift in Sources */,
 				8801B10720628DE900443CA3 /* CViewController.swift in Sources */,
 				88AB60F52062F39E0083536B /* Routes.swift in Sources */,
@@ -455,6 +467,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -462,6 +475,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -512,6 +526,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -519,6 +534,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
