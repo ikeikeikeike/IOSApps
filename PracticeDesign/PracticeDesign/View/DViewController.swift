@@ -11,6 +11,7 @@ import UIKit
 class DViewController: UITableViewController {
     
     let cellID = "DTableViewCell"
+    let pickerCellID = "PickerTableViewCell"
     
     enum Section: Int {
         case User = 0
@@ -71,11 +72,23 @@ class DViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-
-        cell.textLabel?.text = Section(rawValue: indexPath.section)?[indexPath.row]
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: pickerCellID, for: indexPath) as! PickerTableViewCell
+        cell.titleLabel?.text = "Test Title"
 
         return cell
+        
+//        switch Section(rawValue: indexPath.section) {
+//        case .some(.Account):
+//            let cell = tableView.dequeueReusableCell(withIdentifier: pickerCellID, for: indexPath) as! PickerTableViewCell
+//            cell.titleLabel?.text = "Test Title"
+//            return cell
+//        default:
+//            let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+//            cell.textLabel?.text = Section(rawValue: indexPath.section)?[indexPath.row]
+//            return cell
+//        }
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -105,6 +118,31 @@ class DViewController: UITableViewController {
 
         default:
             print("Default")
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        (cell as! PickerTableViewCell).watchFrameChanges()
+    }
+    
+    override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        (cell as! PickerTableViewCell).ignoreFrameChanges()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        for cell in tableView.visibleCells as! [PickerTableViewCell] {
+            cell.ignoreFrameChanges()
+        }
+    }
+    
+    var selectedIndexPath : IndexPath?
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath == selectedIndexPath {
+            return PickerTableViewCell.expandedHeight
+        } else {
+            return PickerTableViewCell.defaultHeight
         }
     }
     

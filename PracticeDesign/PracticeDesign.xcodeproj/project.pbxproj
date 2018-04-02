@@ -14,6 +14,7 @@
 		8801B10B2062914D00443CA3 /* AAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801B10A2062914D00443CA3 /* AAViewController.swift */; };
 		880651A2206CCE750060D293 /* DUpdater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880651A1206CCE750060D293 /* DUpdater.storyboard */; };
 		880651A7206CF3220060D293 /* InputTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880651A6206CF3220060D293 /* InputTextTableViewCell.swift */; };
+		881DFAB1207298B20055E89D /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881DFAB0207298B20055E89D /* PickerTableViewCell.swift */; };
 		883A376F20702A7100375508 /* DUpdaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A376E20702A7100375508 /* DUpdaterViewController.swift */; };
 		88524FDA20628A5000CFEAB2 /* Compass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88524FD920628A5000CFEAB2 /* Compass.framework */; };
 		88524FDE20628C4700CFEAB2 /* Routes+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88524FDD20628C4700CFEAB2 /* Routes+UIViewController.swift */; };
@@ -59,6 +60,7 @@
 		8801B10A2062914D00443CA3 /* AAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAViewController.swift; sourceTree = "<group>"; };
 		880651A1206CCE750060D293 /* DUpdater.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DUpdater.storyboard; sourceTree = "<group>"; };
 		880651A6206CF3220060D293 /* InputTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextTableViewCell.swift; sourceTree = "<group>"; };
+		881DFAB0207298B20055E89D /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
 		883A376E20702A7100375508 /* DUpdaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUpdaterViewController.swift; sourceTree = "<group>"; };
 		88524FD920628A5000CFEAB2 /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
 		88524FDD20628C4700CFEAB2 /* Routes+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Routes+UIViewController.swift"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				880651A6206CF3220060D293 /* InputTextTableViewCell.swift */,
+				881DFAB0207298B20055E89D /* PickerTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			files = (
 				88AB60EB2062D43C0083536B /* DViewController.swift in Sources */,
 				88D5A51B205EA89600D4EE4B /* AppDelegate.swift in Sources */,
+				881DFAB1207298B20055E89D /* PickerTableViewCell.swift in Sources */,
 				880651A7206CF3220060D293 /* InputTextTableViewCell.swift in Sources */,
 				8801B10520628DE300443CA3 /* BViewController.swift in Sources */,
 				8801B10720628DE900443CA3 /* CViewController.swift in Sources */,
