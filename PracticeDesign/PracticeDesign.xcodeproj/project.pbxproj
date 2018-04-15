@@ -33,6 +33,9 @@
 		88D5A55A205EB66000D4EE4B /* AItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A559205EB66000D4EE4B /* AItem.storyboard */; };
 		88D5A55C205EB6C500D4EE4B /* AA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A55B205EB6C500D4EE4B /* AA.storyboard */; };
 		88D5A55E205EB6FA00D4EE4B /* AB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D5A55D205EB6FA00D4EE4B /* AB.storyboard */; };
+		88EDCD21208345BC001D0602 /* CoreActionSheetPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EDCD20208345BC001D0602 /* CoreActionSheetPicker.framework */; };
+		88EDCD23208347C2001D0602 /* DPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EDCD22208347C2001D0602 /* DPickerViewController.swift */; };
+		88EDCD2520834812001D0602 /* DPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EDCD2420834812001D0602 /* DPicker.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		88D5A559205EB66000D4EE4B /* AItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AItem.storyboard; sourceTree = "<group>"; };
 		88D5A55B205EB6C500D4EE4B /* AA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AA.storyboard; sourceTree = "<group>"; };
 		88D5A55D205EB6FA00D4EE4B /* AB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AB.storyboard; sourceTree = "<group>"; };
+		88EDCD20208345BC001D0602 /* CoreActionSheetPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreActionSheetPicker.framework; path = Carthage/Build/iOS/CoreActionSheetPicker.framework; sourceTree = "<group>"; };
+		88EDCD22208347C2001D0602 /* DPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPickerViewController.swift; sourceTree = "<group>"; };
+		88EDCD2420834812001D0602 /* DPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DPicker.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EDCD21208345BC001D0602 /* CoreActionSheetPicker.framework in Frameworks */,
 				88524FDA20628A5000CFEAB2 /* Compass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +139,7 @@
 		88524FD820628A5000CFEAB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88EDCD20208345BC001D0602 /* CoreActionSheetPicker.framework */,
 				88524FD920628A5000CFEAB2 /* Compass.framework */,
 			);
 			name = Frameworks;
@@ -147,6 +155,7 @@
 				8801B10620628DE900443CA3 /* CViewController.swift */,
 				88AB60EA2062D43C0083536B /* DViewController.swift */,
 				883A376E20702A7100375508 /* DUpdaterViewController.swift */,
+				88EDCD22208347C2001D0602 /* DPickerViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +236,7 @@
 				88D5A54D205EA9B900D4EE4B /* C.storyboard */,
 				88AB60F12062D7600083536B /* D.storyboard */,
 				880651A1206CCE750060D293 /* DUpdater.storyboard */,
+				88EDCD2420834812001D0602 /* DPicker.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -241,7 +251,7 @@
 				88D5A513205EA89600D4EE4B /* Sources */,
 				88D5A514205EA89600D4EE4B /* Frameworks */,
 				88D5A515205EA89600D4EE4B /* Resources */,
-				88524FDB20628A8B00CFEAB2 /* ShellScript */,
+				88524FDB20628A8B00CFEAB2 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -346,6 +356,7 @@
 				88D5A55A205EB66000D4EE4B /* AItem.storyboard in Resources */,
 				88D5A522205EA89600D4EE4B /* Assets.xcassets in Resources */,
 				88D5A55C205EB6C500D4EE4B /* AA.storyboard in Resources */,
+				88EDCD2520834812001D0602 /* DPicker.storyboard in Resources */,
 				88D5A520205EA89600D4EE4B /* Main.storyboard in Resources */,
 				880651A2206CCE750060D293 /* DUpdater.storyboard in Resources */,
 				88D5A55E205EB6FA00D4EE4B /* AB.storyboard in Resources */,
@@ -370,14 +381,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		88524FDB20628A8B00CFEAB2 /* ShellScript */ = {
+		88524FDB20628A8B00CFEAB2 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Compass.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CoreActionSheetPicker.framework",
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +408,7 @@
 				88D5A51B205EA89600D4EE4B /* AppDelegate.swift in Sources */,
 				881DFAB1207298B20055E89D /* PickerTableViewCell.swift in Sources */,
 				880651A7206CF3220060D293 /* InputTextTableViewCell.swift in Sources */,
+				88EDCD23208347C2001D0602 /* DPickerViewController.swift in Sources */,
 				8801B10520628DE300443CA3 /* BViewController.swift in Sources */,
 				8801B10720628DE900443CA3 /* CViewController.swift in Sources */,
 				883A376F20702A7100375508 /* DUpdaterViewController.swift in Sources */,

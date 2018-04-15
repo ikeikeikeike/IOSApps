@@ -21,6 +21,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any text here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-rk-Ysu">
                                 <rect key="frame" x="16" y="110" width="343" height="30"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZT-tt-rXp">
@@ -41,6 +42,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eKv-fI-SLr"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="fBe-hy-Z0p"/>
                     <navigationItem key="navigationItem" title="Title" id="BfY-kY-Sli"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

@@ -21,12 +21,14 @@ class Routes {
             "aa:{title}",
             "ab:{title}",
             "dupdater:{section}:{title}",
+            "dpicker:{section}:{title}",
         ]
         
         router.routes = [
             "aa:{title}": AARoute(),
             "ab:{title}": ABRoute(),
             "dupdater:{section}:{title}": DUpdaterRoute(),
+            "dpicker:{section}:{title}": DPickerRoute(),
         ]
     }
 }
@@ -65,6 +67,21 @@ struct ABRoute: Routable {
 struct DUpdaterRoute: Routable {
     let vc = UIStoryboard(name: "DUpdater", bundle: nil)
         .instantiateViewController(withIdentifier: "DUpdaterViewController")
+    
+    func navigate(to location: Location, from currentController: CurrentController) throws {
+        guard let title = location.arguments["title"] else {
+            return
+        }
+        
+        vc.title = title
+        
+        currentController.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+struct DPickerRoute: Routable {
+    let vc = UIStoryboard(name: "DPicker", bundle: nil)
+        .instantiateViewController(withIdentifier: "DPickerViewController")
     
     func navigate(to location: Location, from currentController: CurrentController) throws {
         guard let title = location.arguments["title"] else {

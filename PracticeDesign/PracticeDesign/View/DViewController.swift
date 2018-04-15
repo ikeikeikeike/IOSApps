@@ -72,23 +72,16 @@ class DViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: pickerCellID, for: indexPath) as! PickerTableViewCell
-        cell.titleLabel?.text = "Test Title"
-
-        return cell
-        
-//        switch Section(rawValue: indexPath.section) {
-//        case .some(.Account):
-//            let cell = tableView.dequeueReusableCell(withIdentifier: pickerCellID, for: indexPath) as! PickerTableViewCell
-//            cell.titleLabel?.text = "Test Title"
-//            return cell
-//        default:
-//            let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-//            cell.textLabel?.text = Section(rawValue: indexPath.section)?[indexPath.row]
-//            return cell
-//        }
+        switch Section(rawValue: indexPath.section) {
+        case .some(.Account):
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+            cell.textLabel?.text = Section(rawValue: indexPath.section)?[indexPath.row]
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+            cell.textLabel?.text = Section(rawValue: indexPath.section)?[indexPath.row]
+            return cell
+        }
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -113,39 +106,14 @@ class DViewController: UITableViewController {
 
         case .some(.Account):
             let s = Section.Account
-            let url = URL(string: "compass://dupdater:\(s.title()):\(s[indexPath.row])")!
+            let url = URL(string: "compass://dpicker:\(s.title()):\(s[indexPath.row])")!
             handleRoute(url, router: Routes.router)
 
         default:
             print("Default")
         }
     }
-    
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        (cell as! PickerTableViewCell).watchFrameChanges()
-    }
-    
-    override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        (cell as! PickerTableViewCell).ignoreFrameChanges()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        for cell in tableView.visibleCells as! [PickerTableViewCell] {
-            cell.ignoreFrameChanges()
-        }
-    }
-    
-    var selectedIndexPath : IndexPath?
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath == selectedIndexPath {
-            return PickerTableViewCell.expandedHeight
-        } else {
-            return PickerTableViewCell.defaultHeight
-        }
-    }
-    
+        
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

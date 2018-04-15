@@ -52,6 +52,7 @@
                     <navigationItem key="navigationItem" title="D" id="al1-Lm-boj"/>
                     <connections>
                         <segue destination="fiL-8g-xdB" kind="show" id="fOo-TY-Vo3"/>
+                        <segue destination="ai7-ED-BT5" kind="show" id="QEl-1F-Y93"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNp-CR-scX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -81,7 +82,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="DUpdater" storyboardName="DUpdater" referencedIdentifier="DUpdaterViewController" id="fiL-8g-xdB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7v-Ed-gEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="841"/>
+            <point key="canvasLocation" x="974" y="583"/>
+        </scene>
+        <!--DPickerViewController-->
+        <scene sceneID="JUB-Fa-Xda">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DPickerViewController" storyboardName="DPicker" referencedIdentifier="DPickerViewController" id="ai7-ED-BT5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W32-rT-f80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="1057"/>
         </scene>
     </scenes>
 </document>
